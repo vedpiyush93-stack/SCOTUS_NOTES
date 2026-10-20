@@ -64,7 +64,7 @@ h2{font:500 clamp(28px,3.4vw,40px)/1.1 "Cormorant Garamond",Georgia,serif;margin
 .boxhead{display:flex;align-items:center;gap:10px;font:600 15px Inter,system-ui,sans-serif;margin:0 0 12px}
 .boxhead .num{width:26px;height:26px;border-radius:50%;background:var(--box);color:#fff;display:grid;place-items:center;font-size:13px}
 figure{margin:0 0 16px}figure img{display:block;max-width:100%;max-height:400px;width:auto;border-radius:6px}
-.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pair.single{grid-template-columns:minmax(0,1fr)}
 .r{border-radius:10px;padding:12px 14px 14px;border-left:3px solid}
 .r1{background:var(--one-bg);border-color:var(--one)}.r2{background:var(--two-bg);border-color:var(--two)}
 h4{font:600 11px Inter,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px}
@@ -384,34 +384,38 @@ only &quot;direct costs&quot;</pre></div></div></article>
 <div id="lb" aria-hidden="true"><div class="bar"><button data-z="1.25" title="Zoom in">+</button><button data-z="0.8" title="Zoom out">&minus;</button><button data-fit title="Fit to screen">&#10530;</button><button data-close title="Close">&#10005;</button></div>
 <img alt=""><div class="tip">Scroll to zoom, drag to move, double-click to fit, Esc to close</div></div>
 <script>
-window.__ready=(async()=>{const V='aec65190ec',D=await (await fetch('data/index.json?v='+V)).json();
-const nav=document.querySelector('.main[data-main="0"] nav'),e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
-let h='',sec='';D.p.forEach((r,n)=>{const[t,sh,tk,js]=r,T=D.T[tk]||'',J=js.map(j=>D.J[j]);
- h+=`<a href="#${n+1}" role="tab" data-i="${n}" data-term="${e(t)}" data-taker="${e(T)}" data-justices="|${e(J.join('|'))}|" data-q="${e((sh+' '+t+' '+T+' '+J.join(' ')).toLowerCase())}" title="${e(sh)}"><span class="ph" data-n="${n}"></span><b>${e(t)}</b><span class="nm">${e(sh)}</span></a>`;
- sec+=`<section role="tabpanel" data-i="${n}" data-lazy="${n}" hidden></section>`});
-nav.innerHTML=h;nav.insertAdjacentHTML('afterend',sec);
-const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;const p=x.target,n=+p.dataset.n,c=n%D.per;
- p.style.backgroundImage=`url(img/s/${D.s[Math.floor(n/D.per)]})`;p.style.backgroundPosition=`-${(c%D.cols)*146}px -${Math.floor(c/D.cols)*116}px`;io.unobserve(p)}),{root:nav,rootMargin:'0px 900px'});
-nav.querySelectorAll('.ph').forEach(p=>io.observe(p));
-const C={},chunk=k=>C[k]||(C[k]=fetch('data/p/'+D.c[k]).then(r=>r.json()));
-const warm=h=>(h&&h.match(/src="[^"]+"/g)||[]).forEach(m=>{const i=new Image();i.decoding='async';i.src=m.slice(5,-1)});
-window.fillPanel=P=>{const n=+P.dataset.lazy,k=Math.floor(n/D.ch),j=n%D.ch;if(j>=D.ch-5&&D.c[k+1])chunk(k+1);if(j<5&&k>0)chunk(k-1);
- return chunk(k).then(a=>{if(!P.firstChild)P.innerHTML=a[j];setTimeout(()=>{warm(a[j+1]);warm(a[j-1])},300)})};
-const seen=new Set();nav.addEventListener('pointerover',ev=>{const t=ev.target.closest('a');if(!t)return;const n=+t.dataset.i;if(seen.has(n))return;seen.add(n);
- const k=Math.floor(n/D.ch);chunk(k).then(a=>warm(a[n%D.ch]))});
 document.addEventListener('load',e=>{if(e.target.tagName==='IMG')e.target.classList.add('ld')},true);
-window.__search=fetch('data/q.json?v='+V).then(r=>r.json()).then(Q=>{const tabs=nav.querySelectorAll('a');Q.forEach((q,n)=>{if(tabs[n])tabs[n].dataset.q=q});window.__filterAll&&window.__filterAll()});
+const __seen=()=>document.querySelectorAll('img').forEach(i=>{if(i.complete&&i.naturalWidth)i.classList.add('ld')});
+__seen();document.addEventListener('DOMContentLoaded',__seen);addEventListener('load',__seen);
+window.__ready=(async()=>{const V='c93cde53b9',ALL=await (await fetch('data/index.json?v='+V)).json(),navs={},
+e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]),
+C={},chunk=f=>C[f]||(C[f]=fetch('data/p/'+f).then(r=>r.json())),
+warm=h=>(h&&h.match(/src="[^"]+"/g)||[]).forEach(m=>{const i=new Image();i.decoding='async';i.src=m.slice(5,-1)});
+for(const K in ALL){const D=ALL[K],nav=document.querySelector(`.main[data-main="${K}"] nav`),pre=K==='2'?'w':'';if(!nav||!D.p.length)continue;navs[K]=nav;
+ let h='',sec='';D.p.forEach((r,n)=>{const[t,sh,tk,js]=r,T=D.T[tk]||'',J=js.map(j=>D.J[j]);
+  h+=`<a href="#${pre}${n+1}" role="tab" data-i="${n}" data-term="${e(t)}" data-taker="${e(T)}" data-justices="|${e(J.join('|'))}|" data-q="${e((sh+' '+t+' '+T+' '+J.join(' ')).toLowerCase())}" title="${e(sh)}"><span class="ph" data-n="${n}"></span><b>${e(t)}</b><span class="nm">${e(sh)}</span></a>`;
+  sec+=`<section role="tabpanel" data-i="${n}" data-lazy="${n}" hidden></section>`});
+ nav.innerHTML=h;nav.insertAdjacentHTML('afterend',sec);
+ const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;const p=x.target,n=+p.dataset.n,c=n%D.per;
+  p.style.backgroundImage=`url(img/s/${D.s[Math.floor(n/D.per)]})`;p.style.backgroundPosition=`-${(c%D.cols)*146}px -${Math.floor(c/D.cols)*116}px`;io.unobserve(p)}),{root:nav,rootMargin:'0px 900px'});
+ nav.querySelectorAll('.ph').forEach(p=>io.observe(p));
+ const seen=new Set();nav.addEventListener('pointerover',ev=>{const t=ev.target.closest('a');if(!t)return;const n=+t.dataset.i;if(seen.has(n))return;seen.add(n);
+  chunk(D.c[Math.floor(n/D.ch)]).then(a=>warm(a[n%D.ch]))})}
+window.fillPanel=(P,K)=>{const D=ALL[K],n=+P.dataset.lazy,k=Math.floor(n/D.ch),j=n%D.ch;if(j>=D.ch-5&&D.c[k+1])chunk(D.c[k+1]);if(j<5&&k>0)chunk(D.c[k-1]);
+ return chunk(D.c[k]).then(a=>{if(!P.firstChild)P.innerHTML=a[j];setTimeout(()=>{warm(a[j+1]);warm(a[j-1])},300)})};
+window.__search=fetch('data/q.json?v='+V).then(r=>r.json()).then(Q=>{for(const K in Q){const nav=navs[K];if(!nav)continue;const tabs=nav.querySelectorAll('a');
+ Q[K].forEach((q,n)=>{if(tabs[n])tabs[n].dataset.q=q})}window.__filterAll&&window.__filterAll()});
 })();
 </script>
 <script>
 window.__init=()=>{const mains=[...document.querySelectorAll('.main')],mbtn=[...document.querySelectorAll('.chapters button')];
 const areas=mains.map(m=>{const tabs=[...m.querySelectorAll('nav a')];return{tabs,panels:[...m.querySelectorAll('section[role=tabpanel]')],nav:m.querySelector('nav'),cur:0,vis:tabs.map((t,k)=>k),root:m}});
 let active=0;
-const hash=()=>{try{history.replaceState(null,'','#'+(active?'v':'')+(areas[active].cur+1))}catch(e){}};
+const PRE=['','v','w'],hash=()=>{try{history.replaceState(null,'','#'+PRE[active]+(areas[active].cur+1))}catch(e){}};
 function centre(a,smooth){const t=a.tabs[a.cur];if(t&&a.nav){const left=t.offsetLeft-a.nav.clientWidth/2+t.clientWidth/2;if(smooth)a.nav.scrollTo({left,behavior:'smooth'});else a.nav.scrollLeft=left}}
 function show(i,scroll=true){const a=areas[active];if(!a.panels.length||!a.vis.length)return;if(!a.vis.includes(i))i=a.vis[0];
-  const P=a.panels[i];if(P.dataset.lazy&&!P.firstChild){if(window.LAZY)P.innerHTML=LAZY[+P.dataset.lazy];
-    else if(window.fillPanel)window.fillPanel(P).then(()=>{if(a.cur===i&&P.firstChild)show(i,false)})}a.tabs.forEach((t,k)=>t.setAttribute('aria-selected',k===i));a.panels.forEach((p,k)=>p.hidden=k!==i);a.cur=i;const c=a.panels[i].querySelector('.count');if(c)c.textContent=(a.vis.indexOf(i)+1)+' of '+a.vis.length;hash();centre(a,scroll);
+  const P=a.panels[i],K=a.root.dataset.main;if(P.dataset.lazy&&!P.firstChild){if(window.LAZY)P.innerHTML=LAZY[K][+P.dataset.lazy];
+    else if(window.fillPanel)window.fillPanel(P,K).then(()=>{if(a.cur===i&&P.firstChild)show(i,false)})}a.tabs.forEach((t,k)=>t.setAttribute('aria-selected',k===i));a.panels.forEach((p,k)=>p.hidden=k!==i);a.cur=i;const c=a.panels[i].querySelector('.count');if(c)c.textContent=(a.vis.indexOf(i)+1)+' of '+a.vis.length;hash();centre(a,scroll);
   if(scroll&&a.nav){const y=a.nav.getBoundingClientRect().top+scrollY-12;if(scrollY>y)scrollTo({top:y})}}
 function main(j,scroll=true){active=j;mains.forEach((m,k)=>m.hidden=k!==j);mbtn.forEach((b,k)=>b.setAttribute('aria-selected',k===j));show(areas[j].cur,scroll)}
 areas.forEach((a,j)=>a.tabs.forEach((t,k)=>t.onclick=e=>{e.preventDefault();active=j;show(k)}));mbtn.forEach((b,j)=>b.onclick=()=>main(j));
@@ -420,13 +424,13 @@ document.addEventListener('click',e=>{const b=e.target.closest('[data-step]');if
 function filter(a){const f=a.root.querySelector('.filters');if(!f)return;const words=(f.querySelector('[data-f=q]').value||'').toLowerCase().split(/\s+/).filter(Boolean),
   yr=(f.querySelector('[data-f=term]')||{}).value||'',tk=(f.querySelector('[data-f=taker]')||{}).value||'',js=(f.querySelector('[data-f=justice]')||{}).value||'';
   a.vis=[];a.tabs.forEach((t,k)=>{const ok=words.every(w=>t.dataset.q.includes(w))&&(!yr||t.dataset.term===yr)&&(!tk||t.dataset.taker===tk)&&(!js||t.dataset.justices.includes('|'+js+'|'));t.hidden=!ok;if(ok)a.vis.push(k)});
-  const total=a.tabs.length,n=a.vis.length,kind=a.root.dataset.main==='0'?'pages':'boxes';f.querySelector('.fcount').textContent=n===total?total+' '+kind:n+' of '+total+' '+kind;
+  const total=a.tabs.length,n=a.vis.length,kind=a.root.dataset.main==='1'?'boxes':'pages';f.querySelector('.fcount').textContent=n===total?total+' '+kind:n+' of '+total+' '+kind;
   a.root.querySelector('.empty').hidden=n>0;if(!n){a.panels.forEach(p=>p.hidden=true);return}show(a.vis.includes(a.cur)?a.cur:a.vis[0],false)}
-areas.forEach((a,j)=>{const f=a.root.querySelector('.filters');if(f){f.addEventListener('input',()=>{active=j;filter(a)});const s=f.querySelector('.fcount');if(s)s.textContent=a.tabs.length+' '+(j?'boxes':'pages')}});
+areas.forEach((a,j)=>{const f=a.root.querySelector('.filters');if(f){f.addEventListener('input',()=>{active=j;filter(a)});const s=f.querySelector('.fcount');if(s)s.textContent=a.tabs.length+' '+(j===1?'boxes':'pages')}});
 try{const y=sessionStorage.getItem('y');if(y!==null){sessionStorage.removeItem('y');addEventListener('load',()=>scrollTo(0,+y))}}catch(e){}
 try{const u=new URLSearchParams(location.search);areas.forEach(ar=>{const f=ar.root.querySelector('.filters');if(!f)return;let any=false;
   [['q','q'],['term','year'],['taker','by'],['justice','justice']].forEach(([k,param])=>{const el=f.querySelector('[data-f='+k+']'),v=u.get(param);if(el&&v){el.value=v;any=true}});if(any)filter(ar)})}catch(e){}
-const h=location.hash.slice(1),v=h.startsWith('v');areas[v?1:0].cur=Math.max(0,(parseInt(v?h.slice(1):h)||1)-1);main(v?1:0,false);addEventListener('load',()=>centre(areas[active],false));
+const h=location.hash.slice(1),hk=Math.max(0,PRE.indexOf(h.replace(/[0-9]/g,''))),k0=areas[hk]?hk:0;areas[k0].cur=Math.max(0,(parseInt(h.replace(/^[a-z]/,''))||1)-1);main(k0,false);addEventListener('load',()=>centre(areas[active],false));
 const lb=document.getElementById('lb'),im=lb.querySelector('img');let s=1,x=0,y=0,drag=null;
 const apply=()=>im.style.transform=`translate(${x}px,${y}px) scale(${s})`;
 function fit(){const w=im.naturalWidth,h=im.naturalHeight;s=Math.min(innerWidth*.94/w,innerHeight*.9/h);x=(innerWidth-w*s)/2;y=(innerHeight-h*s)/2;apply()}
