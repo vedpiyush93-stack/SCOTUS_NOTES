@@ -1,0 +1,22 @@
+# Only the website itself is uploaded: the page, its data and the thumbnails. Everything else stays local.
+/*
+!/.gitignore
+!/.nojekyll
+!/index.html
+!/README.md
+!/preview.jpg
+!/data/
+/data/*
+!/data/*.json
+!/data/p/
+/data/p/*
+!/data/p/*.json
+!/img/
+/img/*
+!/img/*.webp
+!/img/s/
+/img/s/*
+!/img/s/*.webp
+.env*
+*.env
+.DS_Store
