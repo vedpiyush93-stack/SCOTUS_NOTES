@@ -145,7 +145,7 @@ img.z{cursor:zoom-in}
 <button data-main="o" aria-selected="true"><span class="no">0</span><span><b>At a glance</b><small>The collection in numbers</small></span></button>
 <button data-main="0"><span class="no">I</span><span><b>Two readings of every page</b><small>10263 pages, each read two ways</small></span></button>
 <button data-main="1"><span class="no">II</span><span><b>Alongside the 2017 volunteers</b><small>Twelve boxes transcribed by volunteers</small></span></button>
-<button data-main="2"><span class="no">III</span><span><b>Pages without marked boxes</b><small>2,872 pages; 2,854 read box by box</small></span></button>
+<button data-main="2"><span class="no">III</span><span><b>Pages without marked boxes</b><small>2,872 pages; 2,855 read box by box</small></span></button>
 </div>
 <div class="main ov" data-main="o" id="overview" hidden>
 <p class="intro">The whole collection at a glance. Hover over the charts for the numbers; click a bar or a square to open those pages.</p>
@@ -532,7 +532,7 @@ only &quot;direct costs&quot;</pre></div></div></article>
 document.addEventListener('load',e=>{if(e.target.tagName==='IMG')e.target.classList.add('ld')},true);
 const __seen=()=>document.querySelectorAll('img').forEach(i=>{if(i.complete&&i.naturalWidth)i.classList.add('ld')});
 __seen();document.addEventListener('DOMContentLoaded',__seen);addEventListener('load',__seen);
-window.__ready=(async()=>{const V='1e4fd8fbe8',ALL=await (await fetch('data/index.json?v='+V)).json(),navs={},
+window.__ready=(async()=>{const V='125533745a',ALL=await (await fetch('data/index.json?v='+V)).json(),navs={},
 e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]),
 C={},chunk=f=>C[f]||(C[f]=fetch('data/p/'+f).then(r=>r.json())),
 warm=h=>(h&&h.match(/src="[^"]+"/g)||[]).forEach(m=>{const i=new Image();i.decoding='async';i.src=m.slice(5,-1)});

@@ -11,7 +11,7 @@ everything written on them.
 - **At a glance**: the whole collection in numbers and interactive charts (pages by term, who sat at conference,
   pages naming each justice)
 - **10,263 pages with marked boxes**, each read two ways: from the whole page, and from each box on its own
-- **2,872 pages without marked boxes**, each read as a whole; 2,854 of them also found and read box by box
+- **2,872 pages without marked boxes**, each read as a whole; 2,855 of them also found and read box by box
 - **Twelve boxes** alongside the transcriptions Zooniverse volunteers made in 2017
 - **Search** by case, justice or any word in the notes; **filter** by year, justice and note-taker
 - Click any image to zoom; arrow keys move between pages; works on phones
