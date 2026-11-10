@@ -1,96 +1,149 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SCOTUS conference notes</title>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SCOTUS Notes · the justices' conference notes</title>
+<meta name="description" content="The Supreme Court justices' private conference notes, transcribed and searchable.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d172e'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23e8cd85'%3ES%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0d172e">
 <link rel="preconnect" href="https://panoptes-uploads.zooniverse.org"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <style>
-:root{--paper:#f5f1e8;--card:#fffdf8;--ink:#1d2433;--soft:#6b6f7b;--rule:#e2dccd;--navy:#16233f;--navy2:#24365e;--gold:#c8a44d;
-  --one:#2b4c7e;--one-bg:#eef2f9;--two:#1f7a6d;--two-bg:#ebf5f2;--mark:#f6dd8f;--mark-ink:#1d2433;--box:#c0472a;--shadow:0 1px 2px rgba(22,35,63,.08),0 8px 24px rgba(22,35,63,.08)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#11151d;--card:#181d28;--ink:#e8e6df;--soft:#9ea3ae;--rule:#2b3140;--navy:#0b1220;--navy2:#16233f;--gold:#d8b864;
-  --one:#8fb0e6;--one-bg:#1b2436;--two:#6cc7b6;--two-bg:#16282a;--mark:#7a6420;--mark-ink:#fff6d8;--box:#ef7d5c;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}}
-:root[data-theme="dark"]{--paper:#11151d;--card:#181d28;--ink:#e8e6df;--soft:#9ea3ae;--rule:#2b3140;--navy:#0b1220;--navy2:#16233f;--gold:#d8b864;
-  --one:#8fb0e6;--one-bg:#1b2436;--two:#6cc7b6;--two-bg:#16282a;--mark:#7a6420;--mark-ink:#fff6d8;--box:#ef7d5c;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 "Source Serif 4","Iowan Old Style",Georgia,serif;-webkit-font-smoothing:antialiased}
-.sans{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
-.hero{background:radial-gradient(1200px 400px at 85% -10%,var(--navy2),transparent 60%),var(--navy);color:#f3eee2;padding:64px 20px 56px;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
-.hero .in,.wrap{max-width:1280px;margin:0 auto}
-.eyebrow{font:600 12px/1 Inter,system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 18px}
-.hero h1{font:500 clamp(36px,5vw,58px)/1.04 "Cormorant Garamond",Georgia,serif;margin:0 0 18px;letter-spacing:-.01em}
-.hero p.lede{max-width:720px;margin:0;color:#cfd5e2;font-size:18px}
-.wrap{padding:0 20px 80px}
-.chapters{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin:-30px 0 34px;position:relative;z-index:2}
-.chapters button{display:flex;gap:16px;align-items:center;text-align:left;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--rule);
-  border-radius:14px;padding:18px 20px;cursor:pointer;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
-.chapters button:hover{transform:translateY(-2px)}
-.chapters .no{flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font:600 20px "Cormorant Garamond",Georgia,serif;
-  color:var(--navy);background:linear-gradient(140deg,#f3e3b4,var(--gold))}
-.chapters b{display:block;font:600 17px Inter,system-ui,sans-serif;margin-bottom:2px}.chapters small{display:block;color:var(--soft);font:14px Inter,system-ui,sans-serif}
-.chapters button[aria-selected="true"]{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),var(--shadow)}
-.intro{max-width:780px;font-size:18px;margin:0 0 18px}
-.live{display:flex;align-items:center;gap:10px;font:14px Inter,system-ui,sans-serif;color:var(--soft);margin:0 0 14px}
-.live .dot{width:9px;height:9px;border-radius:50%;background:var(--two);box-shadow:0 0 0 0 var(--two);animation:pulse 1.6s infinite}
-@keyframes pulse{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
-.meter{display:flex;align-items:center;gap:14px;margin:0 0 22px;max-width:620px}
-.meter .bar{flex:1;height:8px;border-radius:99px;background:var(--rule);overflow:hidden}
-.meter .bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--one),var(--two))}
-.meter p{margin:0;font:14px Inter,system-ui,sans-serif;color:var(--soft);white-space:nowrap}.meter b{font-size:20px;color:var(--ink);font-weight:600;margin-right:4px}
-.filters{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px;font-family:Inter,system-ui,sans-serif}
-.filters input,.filters select{font:14px Inter,system-ui,sans-serif;color:var(--ink);background:var(--card);border:1px solid var(--rule);border-radius:10px;padding:9px 12px}
-.filters input{flex:1;min-width:220px;max-width:440px}.filters input:focus,.filters select:focus{outline:2px solid var(--gold);outline-offset:1px}
-.filters .fcount{font-size:13px;color:var(--soft);margin-left:4px}
-.filters .fclear{font:500 13px Inter,system-ui,sans-serif;color:var(--ink);background:none;border:0;padding:4px 2px;cursor:pointer;text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:3px}
-.filters .fclear[hidden]{display:none}.filters option:disabled{color:var(--soft)}.empty{color:var(--soft);font-style:italic}
-nav a[hidden]{display:none}
-nav{position:relative;display:flex;gap:14px;overflow-x:auto;padding:6px 4px 18px;margin:0 -4px 30px;scroll-snap-type:x proximity;border-bottom:1px solid var(--rule)}
-nav::-webkit-scrollbar{height:8px}nav::-webkit-scrollbar-thumb{background:var(--rule);border-radius:99px}
-nav a{flex:none;width:148px;scroll-snap-align:start;text-decoration:none;color:var(--ink);font-family:Inter,system-ui,sans-serif;opacity:.78;transition:opacity .15s}
-nav a .ph{display:block;height:118px;border-radius:10px;overflow:hidden;background:var(--card);border:1px solid var(--rule);margin-bottom:8px;transition:transform .15s,box-shadow .15s}
-nav a img{width:100%;height:100%;object-fit:cover;object-position:top}
-nav a b{display:block;font-size:12px;font-weight:600;color:var(--gold);letter-spacing:.04em}
-nav a .nm{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:13px;line-height:1.35}
-nav a:hover{opacity:1}nav a:hover .ph{transform:translateY(-2px)}
-nav a[aria-selected="true"]{opacity:1}nav a[aria-selected="true"] .ph{border:2px solid var(--gold);box-shadow:var(--shadow)}
-.head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin:0 0 12px}
-.kicker{margin:0 0 4px;font:600 12px Inter,system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
-h2{font:500 clamp(28px,3.4vw,40px)/1.1 "Cormorant Garamond",Georgia,serif;margin:0}
-.pager{display:flex;gap:8px;flex:none;align-items:center}.pager .count{font:13px Inter,system-ui,sans-serif;color:var(--soft);margin-right:6px;white-space:nowrap}.pager button{width:40px;height:40px;border-radius:50%;border:1px solid var(--rule);background:var(--card);color:var(--ink);font-size:22px;line-height:1;cursor:pointer}
-.pager button:hover{border-color:var(--gold)}
-.spread{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:40px;align-items:start}
-.sheet{position:sticky;top:20px;border-radius:12px;overflow:hidden;box-shadow:var(--shadow);background:var(--card)}
+:root{--paper:#f4efe4;--paper2:#ebe4d4;--card:#fffdf8;--ink:#171d2b;--soft:#636977;--faint:#979ca8;--rule:#e3dbc9;--navy:#0d172e;--navy2:#1c2d55;
+  --gold:#bf9640;--gold2:#e8cd85;--one:#2b5aa8;--one-bg:#edf2fb;--two:#167e6d;--two-bg:#e8f4f0;--mark:#f6d97c;--mark-ink:#171d2b;--box:#c0472a;
+  --shadow:0 1px 2px rgba(13,23,46,.05),0 10px 30px rgba(13,23,46,.07);--lift:0 2px 6px rgba(13,23,46,.08),0 22px 54px rgba(13,23,46,.14);--glass:rgba(244,239,228,.82)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0c1018;--paper2:#141a26;--card:#151b27;--ink:#ebe8df;--soft:#a3a8b4;--faint:#6d7381;
+  --rule:#252c3b;--navy:#060a13;--navy2:#13213f;--gold:#d8b45c;--gold2:#f0d994;--one:#8fb3f0;--one-bg:#16213a;--two:#6fcfbd;--two-bg:#12282a;--mark:#7a611d;
+  --mark-ink:#fff6d6;--box:#ef7d5c;--shadow:0 1px 2px rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.3);--lift:0 2px 6px rgba(0,0,0,.4),0 22px 54px rgba(0,0,0,.45);--glass:rgba(12,16,24,.8)}}
+:root[data-theme="dark"]{--paper:#0c1018;--paper2:#141a26;--card:#151b27;--ink:#ebe8df;--soft:#a3a8b4;--faint:#6d7381;--rule:#252c3b;--navy:#060a13;--navy2:#13213f;
+  --gold:#d8b45c;--gold2:#f0d994;--one:#8fb3f0;--one-bg:#16213a;--two:#6fcfbd;--two-bg:#12282a;--mark:#7a611d;--mark-ink:#fff6d6;--box:#ef7d5c;
+  --shadow:0 1px 2px rgba(0,0,0,.35),0 10px 30px rgba(0,0,0,.3);--lift:0 2px 6px rgba(0,0,0,.4),0 22px 54px rgba(0,0,0,.45);--glass:rgba(12,16,24,.8)}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-padding-top:64px}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}a{color:inherit}
+/* hero */
+.hero{position:relative;overflow:hidden;isolation:isolate;color:#f4efe2;
+  background:radial-gradient(900px 520px at 80% -5%,rgba(232,205,133,.18),transparent 62%),radial-gradient(1100px 620px at 0% 120%,var(--navy2),transparent 60%),var(--navy)}
+.mosaic{position:absolute;inset:-14% -8% auto;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:22px;transform:rotate(-7deg);z-index:-2;
+  opacity:.2;filter:sepia(.35) saturate(.7) contrast(1.05);animation:drift 90s linear infinite alternate}
+.mosaic img{display:block;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:7px;box-shadow:0 14px 34px rgba(0,0,0,.45);opacity:0;transition:opacity 1.2s}
+.mosaic img.ld,.mosaic img[data-local]{opacity:1}
+.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(13,23,46,.35) 0%,rgba(13,23,46,.86) 58%,var(--navy) 100%)}
+@keyframes drift{to{transform:rotate(-7deg) translateY(-16%)}}
+.hero-in{max-width:1240px;margin:0 auto;padding:clamp(64px,11vw,132px) 22px clamp(36px,6vw,64px)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:600 12px/1 Inter,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--gold2);margin:0 0 22px}
+.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold2)}
+.hero h1{font:500 clamp(46px,8vw,96px)/.95 "Cormorant Garamond",Georgia,serif;letter-spacing:-.018em;margin:0 0 22px;max-width:900px}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.lede{font:400 clamp(17px,2vw,21px)/1.5 "Source Serif 4",Georgia,serif;color:#cfd5e1;max-width:600px;margin:0 0 32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 clamp(36px,6vw,60px)}
+.btn{font:600 15px Inter,sans-serif;border-radius:999px;padding:14px 24px;cursor:pointer;border:1px solid transparent;transition:transform .18s,box-shadow .25s,background .25s}
+.btn.primary{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#1d1606;box-shadow:0 10px 28px rgba(191,150,64,.38)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 16px 36px rgba(191,150,64,.5)}
+.btn.ghost{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.22);color:#f4efe2;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.btn.ghost:hover{background:rgba(255,255,255,.14)}
+.stats{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:0;border-top:1px solid rgba(255,255,255,.14)}
+.stats div{padding:20px 18px 4px 0}.stats div+div{padding-left:22px;border-left:1px solid rgba(255,255,255,.1)}
+.stats dt{font:600 11px Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#a8b1c5;margin:0 0 8px}
+.stats dd{margin:0;font:500 clamp(26px,3.4vw,40px)/1 "Cormorant Garamond",Georgia,serif;font-variant-numeric:lining-nums tabular-nums;color:#fff;letter-spacing:.01em}
+/* tab bar */
+.tabs{position:sticky;top:0;z-index:30;background:var(--glass);-webkit-backdrop-filter:saturate(1.5) blur(16px);backdrop-filter:saturate(1.5) blur(16px);border-bottom:1px solid var(--rule)}
+.tabs-in{max-width:1240px;margin:0 auto;padding:0 12px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}.tabs-in::-webkit-scrollbar{display:none}
+.tabs button{flex:none;font:600 14.5px Inter,sans-serif;color:var(--soft);background:none;border:0;padding:17px 14px 15px;position:relative;cursor:pointer;white-space:nowrap;transition:color .2s}
+.tabs button span{font:500 12px Inter,sans-serif;color:var(--faint);margin-left:7px;font-variant-numeric:tabular-nums}
+.tabs button b{font-weight:inherit}.tabs button i{display:none;font-style:normal}.tabs button:hover{color:var(--ink)}.tabs button[aria-selected="true"]{color:var(--ink)}
+.tabs button:after{content:"";position:absolute;left:14px;right:14px;bottom:-1px;height:3px;border-radius:3px 3px 0 0;background:linear-gradient(90deg,var(--gold2),var(--gold));transform:scaleX(0);transition:transform .25s}
+.tabs button[aria-selected="true"]:after{transform:scaleX(1)}
+/* page frame */
+.wrap{max-width:1240px;margin:0 auto;padding:clamp(26px,4vw,44px) 22px 110px}
+.lead{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px 28px;margin:0 0 22px}
+.lead h2{margin:0 0 4px}.sub{margin:0;color:var(--soft);font:400 16.5px/1.5 "Source Serif 4",Georgia,serif;max-width:640px}
+.legend{display:flex;flex-wrap:wrap;gap:8px;font:500 12.5px Inter,sans-serif;color:var(--soft)}
+.legend span,.legend button{display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:999px;background:var(--card);border:1px solid var(--rule)}
+.legend i{width:9px;height:9px;border-radius:50%}.legend .k1 i{background:var(--one)}.legend .k2 i{background:var(--two)}.legend .k3 i{background:var(--mark);border-radius:2px}
+.legend button{cursor:pointer;color:var(--ink);font:600 12.5px Inter,sans-serif}.legend button:hover{border-color:var(--gold)}
+.legend button i{background:var(--gold)}
+.live{display:flex;align-items:center;gap:10px;font:14px Inter,sans-serif;color:var(--soft);margin:0 0 14px}
+.live .dot{width:9px;height:9px;border-radius:50%;background:var(--two);animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 var(--two)}70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+/* filters */
+.filters{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 6px;padding:6px;background:var(--card);border:1px solid var(--rule);border-radius:16px;box-shadow:var(--shadow)}
+.filters input,.filters select{font:500 14.5px Inter,sans-serif;color:var(--ink);background-color:var(--paper);border:1px solid transparent;border-radius:11px;padding:10px 12px;min-width:0;transition:border-color .2s,background-color .2s}
+.filters input{flex:1 1 280px;padding-left:38px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none' stroke='%23979ca8' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='7' cy='7' r='5.5'/%3E%3Cpath d='m11.5 11.5 3 3'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:13px 50%}
+.filters select{flex:0 1 auto;max-width:230px;-webkit-appearance:none;appearance:none;padding-right:32px;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' stroke='%23979ca8' stroke-width='1.6'%3E%3Cpath d='m1 1 4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center}
+.filters input:focus,.filters select:focus{outline:none;border-color:var(--gold);background-color:var(--card)}
+.filters .fcount{font:500 13px Inter,sans-serif;color:var(--soft);padding:0 8px;margin-left:auto;white-space:nowrap;font-variant-numeric:tabular-nums}
+.filters .fclear{font:600 13px Inter,sans-serif;background:none;border:0;padding:6px 8px;cursor:pointer;color:var(--gold)}.filters .fclear[hidden]{display:none}
+.filters option:disabled{color:var(--faint)}.empty{color:var(--soft);font-style:italic;margin:18px 4px}
+/* page strip: only the thumbnails in view are drawn */
+.strip{position:relative;overflow-x:auto;overflow-y:hidden;height:200px;margin:8px -22px 24px;padding:0 22px;overscroll-behavior-x:contain;scrollbar-width:thin;scrollbar-color:var(--rule) transparent;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 22px,#000 calc(100% - 22px),transparent);mask-image:linear-gradient(90deg,transparent,#000 22px,#000 calc(100% - 22px),transparent)}
+.track{position:relative;height:100%}
+.strip a{position:absolute;top:10px;width:146px;text-decoration:none;color:var(--ink);-webkit-tap-highlight-color:transparent}
+.strip .ph{display:block;width:146px;height:116px;border-radius:11px;overflow:hidden;background-color:var(--paper2);border:1px solid var(--rule);transition:transform .2s,box-shadow .25s}
+.strip img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.strip b{display:block;margin:9px 0 1px;font:700 11px Inter,sans-serif;letter-spacing:.08em;color:var(--gold)}
+.strip .nm{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font:500 13px/1.32 Inter,sans-serif;color:var(--soft)}
+.strip a:hover .ph{transform:translateY(-3px);box-shadow:var(--shadow)}
+.strip a[aria-selected="true"] .ph{box-shadow:0 0 0 2px var(--gold),0 12px 28px rgba(191,150,64,.32);transform:translateY(-3px)}
+.strip a[aria-selected="true"] .nm{color:var(--ink)}
+/* one page */
+.panel{min-height:50vh;transition:opacity .2s}.panel.loading{opacity:.4}
+.panel.in .head,.panel.in .fix,.panel.in .spread{animation:rise .5s cubic-bezier(.2,.7,.2,1) both}.panel.in .fix{animation-delay:.04s}.panel.in .spread{animation-delay:.08s}
+@keyframes rise{from{opacity:0;transform:translateY(12px)}}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin:0 0 20px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.chips span{font:600 11px Inter,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--soft);background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:5px 11px}
+.chips span:first-child{color:#1d1606;background:linear-gradient(135deg,var(--gold2),var(--gold));border-color:transparent}
+h2{font:500 clamp(30px,4.2vw,50px)/1.04 "Cormorant Garamond",Georgia,serif;margin:0;letter-spacing:-.012em}
+.pager{display:flex;gap:8px;flex:none;align-items:center}.pager .count{font:500 13px Inter,sans-serif;color:var(--soft);margin-right:6px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.pager button{width:44px;height:44px;border-radius:50%;border:1px solid var(--rule);background:var(--card);font-size:22px;line-height:1;cursor:pointer;transition:border-color .2s,transform .15s}
+.pager button:hover{border-color:var(--gold);transform:translateY(-1px)}
+.spread{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(22px,3.4vw,44px);align-items:start}
+.sheet{position:sticky;top:74px;border-radius:14px;overflow:hidden;box-shadow:var(--lift);background:var(--card)}
 .sheet img{display:block;width:100%}
 .sheet svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 .sheet rect,.sheet polygon{fill:rgba(192,71,42,.06);stroke:var(--box);stroke-width:5}.sheet polygon.oth{fill:rgba(43,120,214,.06);stroke:#2b78d6}.sheet circle{fill:var(--box)}
-.sheet text{font:600 40px Inter,system-ui,sans-serif;fill:#fff;text-anchor:middle}
-.box{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:20px 22px 22px;margin:0 0 22px;box-shadow:var(--shadow)}
-.boxhead{display:flex;align-items:center;gap:10px;font:600 15px Inter,system-ui,sans-serif;margin:0 0 12px}
-.boxhead .num{width:26px;height:26px;border-radius:50%;background:var(--box);color:#fff;display:grid;place-items:center;font-size:13px}
-figure{margin:0 0 16px}figure img{display:block;max-width:100%;max-height:400px;width:auto;border-radius:6px}
-.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}.pair.single{grid-template-columns:minmax(0,1fr)}
-.r{border-radius:10px;padding:12px 14px 14px;border-left:3px solid}
-.r1{background:var(--one-bg);border-color:var(--one)}.r2{background:var(--two-bg);border-color:var(--two)}
-h4{font:600 11px Inter,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px}
+.sheet text{font:600 40px Inter,sans-serif;fill:#fff;text-anchor:middle}.sheet svg.ul line{stroke-width:7;stroke-linecap:round;opacity:.8}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:18px 20px 20px;margin:0 0 18px;box-shadow:var(--shadow)}
+.boxhead{display:flex;align-items:center;gap:11px;font:600 16px Inter,sans-serif;margin:0 0 14px}
+.boxhead .num{flex:none;width:28px;height:28px;border-radius:50%;background:var(--box);color:#fff;display:grid;place-items:center;font-size:13px;box-shadow:0 4px 12px rgba(192,71,42,.28)}
+figure{margin:0 0 14px}figure img{display:block;max-width:100%;max-height:420px;width:auto;border-radius:9px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}.pair.single{grid-template-columns:minmax(0,1fr)}
+.r{border-radius:12px;padding:13px 15px 15px}.r1{background:var(--one-bg)}.r2{background:var(--two-bg)}
+h4{display:flex;align-items:center;gap:8px;font:700 10.5px Inter,sans-serif;letter-spacing:.15em;text-transform:uppercase;margin:0 0 9px;color:var(--soft)}
+h4:before{content:"";flex:none;width:7px;height:7px;border-radius:50%;background:currentColor}
 .r1 h4{color:var(--one)}.r2 h4{color:var(--two)}
-pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:16.5px/1.65 "Source Serif 4","Iowan Old Style",Georgia,serif}
-mark{background:var(--mark);color:var(--mark-ink);border-radius:3px;padding:0 2px}
-.wait{color:var(--soft);font-style:italic}.fn{font:13px Inter,system-ui,sans-serif;color:var(--soft);margin:10px 0 0}
-.fix{font:13.5px/1.55 Inter,system-ui,sans-serif;color:var(--ink);background:rgba(200,164,77,.13);border-left:3px solid var(--gold);
-  border-radius:8px;padding:9px 13px;margin:12px 0 16px;max-width:980px}.fix b{color:var(--gold);font-weight:600}
-.box .fix{margin:8px 0 10px;font-size:13px}
-.fixcard p{font:15px/1.6 Inter,system-ui,sans-serif;margin:8px 0 0;max-width:900px}.fixcard h3{margin:0}
-.vols{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:18px 22px;margin:0 0 22px;box-shadow:var(--shadow)}
-.vols h4{color:var(--soft)}.vols .who{font:600 13px Inter,system-ui,sans-serif;margin:12px 0 2px;display:flex;align-items:center;gap:8px}
-.vols .who i{width:18px;height:4px;border-radius:2px;display:inline-block}
+pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:17px/1.66 "Source Serif 4","Iowan Old Style",Georgia,serif;color:var(--ink)}
+mark{background:linear-gradient(transparent 14%,var(--mark) 14%,var(--mark) 90%,transparent 90%);color:var(--mark-ink);padding:0 1px;border-radius:2px}
+.wait{color:var(--soft);font-style:italic}.fn{font:13px Inter,sans-serif;color:var(--soft);margin:10px 0 0}
+.fix{font:13.5px/1.6 Inter,sans-serif;color:var(--ink);background:linear-gradient(90deg,rgba(191,150,64,.16),rgba(191,150,64,.05));border:1px solid rgba(191,150,64,.28);
+  border-radius:12px;padding:10px 14px;margin:0 0 20px;max-width:980px}.fix b{color:var(--gold);font-weight:700;margin-right:4px}
+.box .fix{margin:0 0 12px;font-size:13px}
+.vols{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:18px 22px;margin:0 0 18px;box-shadow:var(--shadow)}
+.vols .who{font:600 13px Inter,sans-serif;margin:14px 0 3px;display:flex;align-items:center;gap:8px}.vols .who i{width:18px;height:4px;border-radius:2px;display:inline-block}
 .vols pre{font-size:15.5px}
-.sheet svg.ul line{stroke-width:7;stroke-linecap:round;opacity:.8}
-footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--rule);color:var(--soft);font:13px Inter,system-ui,sans-serif}
+/* phone dock */
+.dock{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:40;display:none;align-items:center;gap:8px;padding:7px;border-radius:999px;
+  background:rgba(13,23,46,.9);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#f4efe2;box-shadow:0 14px 34px rgba(0,0,0,.32)}
+.dock button{flex:none;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.1);color:#fff;font-size:26px;line-height:1;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.dock button:active{background:rgba(255,255,255,.22)}
+.dock .dm{flex:1;min-width:0;text-align:center;line-height:1.25}.dock .dt{display:block;font:600 13.5px Inter,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dock .dc{display:block;font:500 11.5px Inter,sans-serif;color:#a8b1c5;font-variant-numeric:tabular-nums}
+footer{max-width:1240px;margin:0 auto;padding:22px 22px 40px;border-top:1px solid var(--rule);color:var(--soft);font:13px/1.6 Inter,sans-serif;display:flex;flex-wrap:wrap;gap:6px 20px;justify-content:space-between}
 img.z{cursor:zoom-in}
-#lb{position:fixed;inset:0;background:rgba(10,14,22,.94);display:none;z-index:50;overflow:hidden;cursor:grab}
+#lb{position:fixed;inset:0;background:rgba(6,9,16,.95);display:none;z-index:50;overflow:hidden;cursor:grab;touch-action:none}
 #lb.on{display:block}#lb img{position:absolute;left:0;top:0;transform-origin:0 0;max-width:none;user-select:none;-webkit-user-drag:none}
-#lb .bar{position:fixed;top:14px;right:14px;display:flex;gap:6px;z-index:51}
-#lb .bar button{font:16px Inter,system-ui,sans-serif;width:40px;height:40px;border-radius:50%;border:1px solid #445;background:#161b26;color:#eee;cursor:pointer}
-#lb .tip{position:fixed;left:16px;bottom:14px;color:#9aa;font:12px Inter,system-ui,sans-serif}
-@media (max-width:900px){.spread,.pair{grid-template-columns:minmax(0,1fr)}.sheet{position:relative;top:auto}.hero{padding:44px 20px 52px}.meter p{white-space:normal}}
+#lb .bar{position:fixed;top:calc(14px + env(safe-area-inset-top));right:14px;display:flex;gap:6px;z-index:51}
+#lb .bar button{font:16px Inter,sans-serif;width:44px;height:44px;border-radius:50%;border:1px solid #445;background:#161b26;color:#eee;cursor:pointer}
+#lb .tip{position:fixed;left:16px;bottom:14px;color:#9aa;font:12px Inter,sans-serif}
+@media (max-width:900px){.spread,.pair{grid-template-columns:minmax(0,1fr)}.sheet{position:relative;top:auto}.head{align-items:flex-start}.pager{display:none}
+  body.paging .dock{display:flex}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.stats div:nth-child(4){padding-left:0;border-left:0}
+  .stats div:nth-child(n+4){border-top:1px solid rgba(255,255,255,.1)}#lb .tip{display:none}}
+@media (max-width:600px){.wrap{padding:22px 16px 116px}.hero-in{padding-left:18px;padding-right:18px}.strip{margin:6px -16px 18px;padding:0 16px;height:194px}
+  .mosaic{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stats div{padding:16px 10px 4px 0}.stats div+div{padding-left:14px}.stats div:nth-child(odd){padding-left:0;border-left:0}.stats div:nth-child(n+3){border-top:1px solid rgba(255,255,255,.1)}
+  .stats div:last-child{grid-column:span 2}.stats div:nth-child(even){padding-left:14px;border-left:1px solid rgba(255,255,255,.1)}.filters input{flex-basis:100%}.filters select{flex:1 1 0;max-width:none;font-size:14px;padding-left:10px;padding-right:26px;background-position:right 9px center}.filters .fcount{flex-basis:100%;margin:2px 0 2px;padding:0 6px;font-size:12.5px}
+  .box{padding:14px 14px 16px;border-radius:14px}.tabs-in{padding:0 6px;justify-content:space-between}.tabs button{flex:1 1 auto;padding:15px 6px 13px;font-size:14px}.tabs button b,.tabs button span{display:none}.tabs button i{display:inline}.tabs button:after{left:8px;right:8px}}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
 
 .ov{--s1:#2a78d6;--s2:#eb6834;--s3:#1baf7a;--s4:#a9a79f;--grid:#e8e3d6;--axis:#cfc8b8;--wash:rgba(22,35,63,.05);
   --h1:#cde2fb;--h2:#9ec5f4;--h3:#6da7ec;--h4:#3987e5;--h5:#256abf;--h6:#184f95;--h7:#0d366b}
@@ -98,17 +151,10 @@ img.z{cursor:zoom-in}
   --h1:#0d366b;--h2:#184f95;--h3:#256abf;--h4:#3987e5;--h5:#6da7ec;--h6:#9ec5f4;--h7:#cde2fb}}
 :root[data-theme="dark"] .ov{--s1:#3987e5;--s2:#d95926;--s3:#199e70;--s4:#6b6a64;--grid:#2b3140;--axis:#3a4152;--wash:rgba(255,255,255,.05);
   --h1:#0d366b;--h2:#184f95;--h3:#256abf;--h4:#3987e5;--h5:#6da7ec;--h6:#9ec5f4;--h7:#cde2fb}
-.ov-tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin:0 0 22px}
-.ov-tile{background:var(--card);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:4px;font-family:Inter,system-ui,sans-serif}
-.ov-hero{grid-column:span 2}
-.ov-label{font-size:13px;color:var(--soft)}
-.ov-value{font-size:30px;font-weight:600;line-height:1.15;color:var(--ink)}
-.ov-hero .ov-value{font-size:52px;letter-spacing:-.01em}
-.ov-sub{font-size:13px;color:var(--soft)}
-.ov-card{background:var(--card);border:1px solid var(--rule);border-radius:16px;padding:22px 24px 16px;margin:0 0 22px;box-shadow:var(--shadow)}
+.ov-card{background:var(--card);border:1px solid var(--rule);border-radius:18px;padding:24px 26px 18px;margin:0 0 20px;box-shadow:var(--shadow)}
 .ov-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
-.ov-card h3{margin:0;font:600 18px Inter,system-ui,sans-serif;color:var(--ink)}
-.ov-cap{margin:4px 0 12px;font:14px Inter,system-ui,sans-serif;color:var(--soft);max-width:640px}
+.ov-card h3{margin:0;font:500 27px/1.1 "Cormorant Garamond",Georgia,serif;color:var(--ink)}
+.ov-cap{margin:4px 0 14px;font:14px Inter,system-ui,sans-serif;color:var(--soft);max-width:640px}
 .ov-seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;padding:3px;background:var(--paper)}
 .ov-seg button{font:500 13px Inter,system-ui,sans-serif;color:var(--soft);background:none;border:0;border-radius:999px;padding:6px 12px;cursor:pointer}
 .ov-seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:0 1px 2px rgba(22,35,63,.12)}
@@ -124,7 +170,6 @@ img.z{cursor:zoom-in}
 .ov-plot .cell{cursor:pointer}.ov-plot .cell:hover,.ov-plot .cell:focus{stroke:var(--ink);stroke-width:1.5;outline:none}
 .ov-plot .seg{cursor:pointer}.ov-plot .seg:hover,.ov-plot .seg:focus{opacity:.82;outline:none}
 .ov-note{margin:6px 0 0;font:12px Inter,system-ui,sans-serif;color:var(--soft)}.ov-note:empty{display:none}
-.chapters button[data-main="o"] .no{font:600 19px Inter,system-ui,sans-serif}
 .ov-scale{display:flex;align-items:center;gap:8px;margin:10px 0 2px;font:12px Inter,system-ui,sans-serif;color:var(--soft)}
 .ov-scale i{width:22px;height:10px;display:inline-block;border-radius:2px}
 .ov-table{margin:10px 0 0;font:13px Inter,system-ui,sans-serif;color:var(--soft)}
@@ -139,35 +184,40 @@ img.z{cursor:zoom-in}
 .ov-tip .tr{display:flex;align-items:center;gap:8px;line-height:1.55}.ov-tip .tr i{width:12px;height:2px;border-radius:1px;display:inline-block}
 .ov-tip .tr b{font-weight:600;min-width:42px;text-align:right;font-variant-numeric:tabular-nums}.ov-tip .tr span{color:var(--soft)}
 .ov-tip .go{margin-top:6px;color:var(--soft);font-size:11px}
-@media (max-width:640px){.ov-hero{grid-column:span 1}.ov-hero .ov-value{font-size:44px}.ov-card{padding:18px 14px 12px}}
-.ph[data-n]{background-repeat:no-repeat;background-size:876px auto}.sheet,.crop{background:var(--rule)}.sheet img,figure img{opacity:0;transition:opacity .3s}.sheet img.ld,figure img.ld{opacity:1}.crop{position:relative;overflow:hidden;border-radius:6px;width:100%}.crop img{position:absolute;max-width:none;max-height:none;height:auto;border-radius:0}@keyframes shimmer{0%{opacity:.55}50%{opacity:1}100%{opacity:.55}}.sheet,.crop{animation:shimmer 1.6s ease-in-out infinite}.sheet:has(img.ld),.crop:has(img.ld){animation:none}</style></head><body>
-<header class="hero"><div class="in"><p class="eyebrow">SCOTUS Notes</p>
-<h1>Reading the Supreme Court's<br>conference notes</h1>
-<p class="lede">At the Court's private conferences the justices took notes on printed forms, one box for each colleague's remarks. These pages come from the papers of Justices Brennan, Blackmun and Powell, with a few of Marshall's and Rehnquist's.</p></div></header>
-<div class="wrap">
-<div class="chapters" role="tablist">
-<button data-main="o" aria-selected="true"><span class="no">0</span><span><b>At a glance</b><small>The collection in numbers</small></span></button>
-<button data-main="0"><span class="no">I</span><span><b>Two readings of every page</b><small>10,263 pages, each read two ways</small></span></button>
-<button data-main="1"><span class="no">II</span><span><b>Alongside the 2017 volunteers</b><small>Twelve boxes transcribed by volunteers</small></span></button>
-<button data-main="2"><span class="no">III</span><span><b>Pages without marked boxes</b><small>2,872 pages; 2,852 read box by box</small></span></button>
-</div>
-<div class="main ov" data-main="o" id="overview" hidden>
-<p class="intro">The whole collection at a glance. Hover over the charts for the numbers; click a bar or a square to open those pages.</p>
-<div class="ov-tiles"><div class="ov-tile ov-hero"><span class="ov-label">Pages of conference notes</span><span class="ov-value">13,135</span><span class="ov-sub">10,263 with marked boxes · 2,872 without</span></div><div class="ov-tile"><span class="ov-label">Boxes, one per justice</span><span class="ov-value">33,761</span></div><div class="ov-tile"><span class="ov-label">Words transcribed</span><span class="ov-value">1.1M</span></div><div class="ov-tile"><span class="ov-label">Justices</span><span class="ov-value">24</span></div><div class="ov-tile"><span class="ov-label">Terms</span><span class="ov-value">1958–1993</span></div></div>
-<section class="ov-card fixcard"><h3>Where the labels come from</h3><p>Case names, terms, note-takers and box labels are Zooniverse's records of the SCOTUS Notes project, checked against the archive's own file names and, where a page prints its case, against the page itself. 73 pages and 20 boxes carry a label the scan contradicts, mostly because Zooniverse looked a case up by its docket number in the wrong term: Brennan's notes on <i>Roe v. Wade</i>, for instance, are filed there as <i>In re Stolar</i>. These are shown with the label the scan supports, and a note on each says what Zooniverse has and how we know; search for “corrected” to list them. Where Zooniverse records no note-taker, it comes from the initials in the archive's file name. The pages of one case are shown together, in page order.</p></section><section class="ov-card"><div class="ov-head"><div><h3>Pages by term</h3><p class="ov-cap">Each column is one term of the Court, split by whose notes they are.</p></div>
+.fixcard{background:linear-gradient(120deg,rgba(191,150,64,.14),var(--card) 55%);border-color:rgba(191,150,64,.35)}
+.fixrow{display:flex;align-items:center;justify-content:space-between;gap:16px 28px;flex-wrap:wrap}
+.fixcard p{margin:6px 0 0;font:15.5px/1.6 "Source Serif 4",Georgia,serif;color:var(--soft);max-width:820px}.fixcard i{color:var(--ink)}
+@media (max-width:640px){.ov-card{padding:18px 14px 12px}.ov-card h3{font-size:24px}}
+.sheet,.crop{background:var(--rule)}.sheet img,figure img{opacity:0;transition:opacity .3s}.sheet img.ld,figure img.ld{opacity:1}.crop{position:relative;overflow:hidden;border-radius:6px;width:100%}.crop img{position:absolute;max-width:none;max-height:none;height:auto;border-radius:0}@keyframes shimmer{0%{opacity:.55}50%{opacity:1}100%{opacity:.55}}.sheet,.crop{animation:shimmer 1.6s ease-in-out infinite}.sheet:has(img.ld),.crop:has(img.ld){animation:none}</style></head><body>
+<header class="hero"><div class="mosaic" aria-hidden="true"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/58576d2b-2c30-40b2-931d-7eba0cd35912.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/d201ee48-8ad3-4afc-8376-63347ee07f73.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/3f14ec64-2f88-4d8d-b069-4c6f86512402.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/88f404a8-d1e1-49d7-858a-cb7032550e5f.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/42256b46-4155-4ee6-bb6f-73b44054da67.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/ab8b71c2-c740-4b0d-a8fa-af1bdad0283f.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/35ea26d2-5e2d-4dc9-9755-252dc3d79038.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/6328c804-c87d-403d-b110-b7ae055bdcb7.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/f5246e4a-f085-410f-8e40-60ca8281cf5e.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/fd5cd054-6091-4731-b291-c1e345ecfe69.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/0003256a-bf8f-4c0f-9053-40307179c583.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/f310d3ef-5feb-43b4-a199-6ab3293063a5.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/94280cbb-7e30-404c-a106-2418346d187e.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/be60086d-71f9-40cd-933b-32c8d521f18e.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/b0a1b098-e9f0-444c-8870-a8703cd7eedb.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/9b1b942c-a96c-4715-8453-f1cf89c2e1cf.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/4d273474-5c3d-4ffb-a5d2-890f7bff78fe.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/8e6a6c48-4498-4bdd-8776-86e919e2d18d.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/4729122d-52d1-45e0-928a-e32ff52769d8.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/1bf6b0a3-b601-4d7c-ab66-5ceac2a5bd0a.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/8e042b4b-7514-446e-971e-86d115902faf.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/d4809e10-fbc0-4046-baa4-a0e79a61bda4.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/2358141e-c63d-4da7-a81c-559f09af861d.jpeg" alt="" loading="lazy" decoding="async"><img src="https://thumbnails.zooniverse.org/300x400/panoptes-uploads.zooniverse.org/subject_location/f024deec-5005-4a1a-8c38-e393c2e7ef48.jpeg" alt="" loading="lazy" decoding="async"></div>
+<div class="hero-in"><p class="eyebrow">SCOTUS Notes · 1958–1993</p>
+<h1>The Supreme Court,<br><em>in its own hand</em></h1>
+<p class="lede">The justices' private conference notes, transcribed and searchable, page by page.</p>
+<div class="cta"><button class="btn primary" data-go="0">Explore the notes</button><button class="btn ghost" data-go="o">At a glance</button></div>
+<dl class="stats"><div><dt>Pages</dt><dd data-count="13135">13,135</dd></div><div><dt>Boxes</dt><dd data-count="33761">33,761</dd></div><div><dt>Words</dt><dd data-count="1081100" data-fmt="M">1.1M</dd></div><div><dt>Justices</dt><dd data-count="24">24</dd></div><div><dt>Terms</dt><dd>1958–1993</dd></div></dl></div></header>
+<nav class="tabs" aria-label="Sections"><div class="tabs-in" role="tablist">
+<button data-main="o" role="tab"><b>At a glance</b><i>Overview</i></button>
+<button data-main="0" role="tab"><b>Two readings</b><i>Readings</i><span>10,263</span></button>
+<button data-main="1" role="tab"><b>Volunteers</b><i>Volunteers</i><span>12</span></button>
+<!--t3--><button data-main="2" role="tab"><b>Unmarked pages</b><i>Unmarked</i><span>2,872</span></button><!--/t3-->
+</div></nav>
+<main class="wrap">
+<div class="main ov" data-main="o" id="ov-root" hidden>
+<div class="lead"><div><h2>The collection at a glance</h2><p class="sub">Tap any bar or square to open those pages.</p></div></div>
+<section class="ov-card fixcard"><div class="fixrow"><div><h3>Labels, checked against the pages</h3><p>Case names and justices come from Zooniverse. 73 pages and 20 boxes were wrong there: Brennan's notes on <i>Roe v. Wade</i>, for one, are filed as <i>In re Stolar</i>. Each is corrected here, with a note on the page.</p></div><button class="btn primary" type="button" data-fixes="0">See the corrections</button></div></section><section class="ov-card"><div class="ov-head"><div><h3>Pages by term</h3><p class="ov-cap">Whose notes, term by term.</p></div>
 <div class="ov-seg" role="group" aria-label="Which pages">
-<button data-mode="all" aria-pressed="true">All pages</button><button data-mode="I" aria-pressed="false">With marked boxes</button><button data-mode="III" aria-pressed="false">Without</button></div></div>
+<button data-mode="all" aria-pressed="true">All</button><button data-mode="I" aria-pressed="false">Marked</button><button data-mode="III" aria-pressed="false">Unmarked</button></div></div>
 <div class="ov-legend" data-for="terms"></div><div class="ov-scroll"><div class="ov-plot" data-chart="terms"></div></div>
 <p class="ov-note" data-note="terms"></p><details class="ov-table" data-table="terms"><summary>Show as a table</summary></details></section>
-<section class="ov-card"><div class="ov-head"><div><h3>Who sat at conference</h3><p class="ov-cap">Each square is a justice in one term, darker for more of their boxes in these notes. The bench changes as justices join and leave.</p></div></div>
+<section class="ov-card"><div class="ov-head"><div><h3>Who sat at conference</h3><p class="ov-cap">Each square is a justice in one term; darker means more of their boxes.</p></div></div>
 <div class="ov-scroll"><div class="ov-plot" data-chart="heat"></div></div><div class="ov-scale" data-for="heat"></div>
 <details class="ov-table" data-table="heat"><summary>Show as a table</summary></details></section>
-<section class="ov-card"><div class="ov-head"><div><h3>Pages naming each justice</h3><p class="ov-cap">How many pages carry a box or a label for each justice.</p></div></div>
+<section class="ov-card"><div class="ov-head"><div><h3>Pages naming each justice</h3><p class="ov-cap">A box or a label for each justice, page by page.</p></div></div>
 <div class="ov-legend" data-for="justices"></div><div class="ov-plot" data-chart="justices"></div>
 <details class="ov-table" data-table="justices"><summary>Show as a table</summary></details></section>
 <script type="application/json" id="ov-data">{"terms":["1958","1959","1960","1961","1962","1963","1964","1965","1966","1967","1968","1969","1970","1971","1972","1973","1974","1975","1976","1977","1978","1979","1980","1981","1982","1983","1984","1985","1986","1987","1988","1989","1990","1991","1992","1993"],"series":["Blackmun","Brennan","Powell","Other"],"pages":{"I":[[0,3,0,0],[0,26,0,0],[0,143,0,0],[0,119,0,0],[0,65,0,0],[0,25,0,0],[0,83,0,0],[0,71,0,0],[0,40,0,0],[0,66,0,21],[0,126,0,5],[0,95,0,0],[0,107,0,0],[0,106,40,0],[80,48,15,0],[244,149,43,0],[221,180,246,0],[242,203,45,0],[243,198,592,0],[215,178,95,0],[230,189,31,0],[260,215,289,0],[224,223,0,0],[243,47,0,0],[253,232,0,0],[246,257,0,0],[258,234,0,0],[213,231,0,0],[2,244,0,0],[266,228,0,0],[224,216,0,0],[218,75,0,0],[207,0,0,0],[52,0,0,0],[213,0,0,0],[65,0,0,0]],"III":[[0,0,0,0],[0,0,0,0],[0,3,0,0],[0,1,0,0],[0,4,0,0],[0,0,0,0],[0,4,0,0],[0,3,0,0],[0,1,0,0],[0,3,0,0],[0,6,0,0],[0,3,0,0],[0,47,0,0],[0,42,18,0],[3,10,17,1],[18,43,2,0],[14,38,6,0],[19,36,1,0],[7,22,7,0],[13,18,2,0],[13,15,1,0],[9,18,4,0],[4,225,311,0],[6,5,84,0],[5,23,107,0],[7,11,76,0],[6,14,297,0],[22,19,440,0],[266,7,158,0],[13,17,0,0],[15,86,0,7],[10,137,0,0],[9,3,0,0],[0,0,0,0],[7,0,0,0],[1,0,0,0]],"all":[[0,3,0,0],[0,26,0,0],[0,146,0,0],[0,120,0,0],[0,69,0,0],[0,25,0,0],[0,87,0,0],[0,74,0,0],[0,41,0,0],[0,69,0,21],[0,132,0,5],[0,98,0,0],[0,154,0,0],[0,148,58,0],[83,58,32,1],[262,192,45,0],[235,218,252,0],[261,239,46,0],[250,220,599,0],[228,196,97,0],[243,204,32,0],[269,233,293,0],[228,448,311,0],[249,52,84,0],[258,255,107,0],[253,268,76,0],[264,248,297,0],[235,250,440,0],[268,251,158,0],[279,245,0,0],[239,302,0,7],[228,212,0,0],[216,3,0,0],[52,0,0,0],[220,0,0,0],[66,0,0,0]]},"justices":["The Chief Justice","Black","Clark","Douglas","Frankfurter","Stewart","Harlan","Whittaker","Warren","White","Goldberg","Fortas","Brennan","Marshall","Blackmun","O'Connor","Powell","Rehnquist","Scalia","Stevens","Kennedy","Souter","Thomas","Ginsburg"],"heat":[[1,0,3],[1,1,8],[1,2,54],[1,3,43],[1,4,24],[1,5,12],[1,6,26],[1,7,19],[1,8,13],[1,9,26],[1,10,32],[1,11,28],[1,12,24],[1,14,1],[14,10,2],[14,11,1],[14,12,14],[14,13,24],[14,14,12],[14,15,59],[14,16,176],[14,17,87],[14,18,300],[14,19,103],[14,20,99],[14,21,195],[14,22,104],[14,23,21],[14,24,115],[14,25,121],[14,26,115],[14,27,112],[14,28,113],[14,29,112],[14,30,97],[14,31,26],[14,32,6],[14,33,12],[14,34,26],[14,35,19],[12,9,9],[12,10,2],[12,13,2],[12,14,36],[12,15,132],[12,16,219],[12,17,125],[12,18,348],[12,19,124],[12,20,107],[12,21,206],[12,22,101],[12,23,114],[12,24,118],[12,25,117],[12,26,123],[12,27,100],[12,28,1],[12,29,122],[12,30,95],[12,31,97],[12,32,6],[2,0,1],[2,1,5],[2,2,28],[2,3,18],[2,4,13],[2,5,5],[2,6,15],[2,7,16],[2,8,9],[3,0,1],[3,1,9],[3,2,36],[3,3,25],[3,4,17],[3,5,3],[3,6,20],[3,7,16],[3,8,10],[3,9,25],[3,10,24],[3,11,23],[3,12,26],[3,13,40],[3,14,52],[3,15,170],[3,16,237],[3,17,38],[3,18,50],[11,7,11],[11,8,2],[11,9,12],[11,10,27],[11,11,1],[4,0,2],[4,1,12],[4,2,56],[4,3,53],[4,4,8],[23,35,28],[10,4,8],[10,5,1],[10,6,6],[6,1,6],[6,2,28],[6,3,26],[6,4,15],[6,5,4],[6,6,25],[6,7,20],[6,8,10],[6,9,31],[6,10,47],[6,11,33],[6,12,31],[20,29,54],[20,30,165],[20,31,115],[20,32,99],[20,33,26],[20,34,100],[20,35,31],[13,9,3],[13,10,7],[13,12,8],[13,13,26],[13,14,42],[13,15,135],[13,16,249],[13,17,156],[13,18,388],[13,19,196],[13,20,171],[13,21,278],[13,22,168],[13,23,117],[13,24,227],[13,25,226],[13,26,218],[13,27,197],[13,28,113],[13,29,116],[13,30,96],[13,31,25],[13,32,13],[13,34,1],[15,10,2],[15,23,116],[15,24,210],[15,25,214],[15,26,226],[15,27,193],[15,28,117],[15,29,229],[15,30,198],[15,31,130],[15,32,98],[15,33,18],[15,34,53],[15,35,31],[16,10,2],[16,13,24],[16,14,56],[16,15,181],[16,16,279],[16,17,194],[16,18,434],[16,19,217],[16,20,197],[16,21,310],[16,22,194],[16,23,125],[16,24,225],[16,25,238],[16,26,230],[16,27,209],[16,28,120],[16,29,28],[17,10,2],[17,13,27],[17,14,55],[17,15,158],[17,16,270],[17,17,179],[17,18,402],[17,19,207],[17,20,196],[17,21,311],[17,22,202],[17,23,131],[17,24,226],[17,25,234],[17,26,231],[17,27,209],[17,28,2],[18,10,1],[18,27,1],[18,28,104],[18,29,197],[18,30,193],[18,31,124],[18,32,100],[18,33,26],[18,34,100],[18,35,12],[21,32,77],[21,33,25],[21,34,98],[21,35,28],[19,10,3],[19,17,96],[19,18,366],[19,19,198],[19,20,188],[19,21,299],[19,22,192],[19,23,131],[19,24,225],[19,25,234],[19,26,235],[19,27,214],[19,28,118],[19,29,234],[19,30,201],[19,31,133],[19,32,93],[19,33,24],[19,34,106],[19,35,11],[5,0,1],[5,1,5],[5,2,28],[5,3,23],[5,4,9],[5,5,3],[5,6,15],[5,7,7],[5,8,3],[5,9,24],[5,10,23],[5,11,14],[5,12,27],[5,13,33],[5,14,58],[5,15,192],[5,16,294],[5,17,212],[5,18,443],[5,19,203],[5,20,188],[5,21,298],[5,22,182],[5,23,8],[0,0,3],[0,1,13],[0,2,87],[0,3,72],[0,4,40],[0,5,17],[0,6,40],[0,7,45],[0,8,21],[0,9,52],[0,10,79],[0,11,63],[0,12,63],[0,13,77],[0,14,69],[0,15,198],[0,16,252],[0,17,206],[0,18,356],[0,19,196],[0,20,186],[0,21,302],[0,22,199],[0,23,136],[0,24,236],[0,25,249],[0,26,227],[0,27,210],[0,28,113],[0,29,244],[0,30,208],[0,31,136],[0,32,102],[0,33,26],[0,34,105],[0,35,33],[22,33,21],[22,34,88],[22,35,31],[8,2,1],[9,3,2],[9,4,6],[9,5,2],[9,6,6],[9,7,5],[9,8,2],[9,9,15],[9,10,25],[9,11,16],[9,12,24],[9,13,32],[9,14,62],[9,15,190],[9,16,305],[9,17,205],[9,18,433],[9,19,218],[9,20,196],[9,21,316],[9,22,206],[9,23,140],[9,24,233],[9,25,241],[9,26,234],[9,27,212],[9,28,119],[9,29,236],[9,30,205],[9,31,123],[9,32,94],[9,33,24],[9,34,89],[7,1,2],[7,2,17],[7,3,13]],"jpages":{"I":[4660,310,110,822,131,2291,276,32,1,4216,15,53,2304,3175,2070,1835,3262,3040,858,3299,590,227,140,28],"III":[1156,35,10,128,4,429,25,1,0,1200,2,5,878,1266,1212,797,1046,847,404,1093,173,6,4,1]},"before":{"pages":0,"from":"","to":""},"kpi":{"pages":13135,"with":10263,"without":2872,"boxes":33761,"words":1081100,"justices":24,"first":"1958","last":"1993"}}</script>
 </div><script>
-(()=>{const root=document.getElementById('overview');if(!root)return;const D=JSON.parse(document.getElementById('ov-data').textContent);
+(()=>{const root=document.getElementById('ov-root');if(!root)return;const D=JSON.parse(document.getElementById('ov-data').textContent);
 const NS='http://www.w3.org/2000/svg',S=['var(--s1)','var(--s2)','var(--s3)','var(--s4)'],H=['var(--h1)','var(--h2)','var(--h3)','var(--h4)','var(--h5)','var(--h6)','var(--h7)'];
 const fmt=n=>n.toLocaleString('en-US'),compact=n=>n>=1e4?Math.round(n/1e3)+'K':n>=1e3?(n/1e3).toFixed(1).replace(/\.0$/,'')+'K':String(n);
 const el=(t,a,p)=>{const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);if(p)p.appendChild(n);return n};
@@ -194,7 +244,7 @@ function legend(key,items){const L=root.querySelector(`.ov-legend[data-for="${ke
   i.style.background=col;const t=document.createElement('span');t.textContent=label;s.append(i,t);if(n!==undefined){const b=document.createElement('b');b.textContent=fmt(n);s.appendChild(b)}L.appendChild(s)})}
 const ML=136,T=D.terms,width=box=>Math.max(720,box.clientWidth);
 let mode='all';const TAB={all:'0',I:'0',III:'2'},NAMES={all:'all pages',I:'pages with marked boxes',III:'pages without marked boxes'};
-function terms(){const box=root.querySelector('[data-chart="terms"]');box.replaceChildren();const W=width(box),mr=8,mt=14,ph=230,mb=26;
+function terms(){const box=root.querySelector('[data-chart="terms"]');box.replaceChildren();const ML=46,W=Math.max(340,box.clientWidth),mr=8,mt=14,ph=230,mb=26;
   const data=D.pages[mode],tot=data.map(r=>r.reduce((a,b)=>a+b,0)),st=step(Math.max(...tot,1)/4),max=Math.ceil(Math.max(...tot,1)/st)*st,band=(W-ML-mr)/T.length,bw=Math.min(24,band*.7);
   const svg=el('svg',{width:W,height:mt+ph+mb,viewBox:`0 0 ${W} ${mt+ph+mb}`,role:'img','aria-label':'Pages by term'},box);const y=v=>mt+ph-v/max*ph;
   for(let v=0;v<=max+1e-6;v+=st){const yy=y(v);el('line',{x1:ML,x2:W-mr,y1:yy,y2:yy,stroke:v?'var(--grid)':'var(--axis)','stroke-width':1},svg);txt(svg,ML-8,yy+4,compact(v),{'text-anchor':'end'})}
@@ -238,386 +288,145 @@ let rt;new ResizeObserver(()=>{clearTimeout(rt);rt=setTimeout(draw,120)}).observ
 </script>
 
 <div class="main" data-main="0" hidden>
-<p class="intro">Each page with its transcriptions; the pages of one case sit together, in page order. Gold marks where the two readings disagree. Where the page itself shows that Zooniverse's label is wrong, the label is corrected and a note says so.</p>
+<div class="lead"><div><h2>Every box, read twice</h2><p class="sub">Once from the whole page, once on its own. Gold marks where they differ.</p></div>
+<div class="legend"><span class="k1"><i></i>Whole page</span><span class="k2"><i></i>Box only</span><span class="k3"><i></i>Differs</span><button type="button" data-fixes="0"><i></i>Corrected labels</button></div></div>
 
-<div class="filters"><input type="search" data-f="q" placeholder="Search cases, justices or words in the notes" aria-label="Search"><select data-f="term" aria-label="Year"><option value="">All years</option><option value="1958">1958 (3)</option><option value="1959">1959 (26)</option><option value="1960">1960 (143)</option><option value="1961">1961 (119)</option><option value="1962">1962 (65)</option><option value="1963">1963 (25)</option><option value="1964">1964 (83)</option><option value="1965">1965 (71)</option><option value="1966">1966 (40)</option><option value="1967">1967 (87)</option><option value="1968">1968 (131)</option><option value="1969">1969 (95)</option><option value="1970">1970 (107)</option><option value="1971">1971 (146)</option><option value="1972">1972 (143)</option><option value="1973">1973 (436)</option><option value="1974">1974 (647)</option><option value="1975">1975 (490)</option><option value="1976">1976 (1,033)</option><option value="1977">1977 (488)</option><option value="1978">1978 (450)</option><option value="1979">1979 (764)</option><option value="1980">1980 (447)</option><option value="1981">1981 (290)</option><option value="1982">1982 (485)</option><option value="1983">1983 (503)</option><option value="1984">1984 (492)</option><option value="1985">1985 (444)</option><option value="1986">1986 (246)</option><option value="1987">1987 (494)</option><option value="1988">1988 (440)</option><option value="1989">1989 (293)</option><option value="1990">1990 (207)</option><option value="1991">1991 (52)</option><option value="1992">1992 (213)</option><option value="1993">1993 (65)</option></select><select data-f="justice" aria-label="Justice"><option value="">All justices</option><option value="The Chief Justice">The Chief Justice (4,660)</option><option value="Black">Black (310)</option><option value="Blackmun">Blackmun (2,070)</option><option value="Brennan">Brennan (2,304)</option><option value="Clark">Clark (110)</option><option value="Douglas">Douglas (822)</option><option value="Fortas">Fortas (53)</option><option value="Frankfurter">Frankfurter (131)</option><option value="Ginsburg">Ginsburg (28)</option><option value="Goldberg">Goldberg (15)</option><option value="Harlan">Harlan (276)</option><option value="Kennedy">Kennedy (590)</option><option value="Marshall">Marshall (3,175)</option><option value="O&#x27;Connor">O&#x27;Connor (1,835)</option><option value="Powell">Powell (3,262)</option><option value="Rehnquist">Rehnquist (3,040)</option><option value="Scalia">Scalia (858)</option><option value="Souter">Souter (227)</option><option value="Stevens">Stevens (3,299)</option><option value="Stewart">Stewart (2,291)</option><option value="Thomas">Thomas (140)</option><option value="Warren">Warren (1)</option><option value="White">White (4,216)</option><option value="Whittaker">Whittaker (32)</option></select><select data-f="taker" aria-label="Note-taker"><option value="">All note-takers (whose notes)</option><option value="Blackmun">Blackmun (4,419)</option><option value="Brennan">Brennan (4,422)</option><option value="Marshall">Marshall (26)</option><option value="Powell">Powell (1,396)</option><option value="Rehnquist" disabled>Rehnquist (none)</option></select><span class="fcount"></span><button type="button" class="fclear" hidden>Clear filters</button></div><p class="empty" hidden>No pages match.</p>
-<nav role="tablist" aria-label="Pages"></nav>
-
+<div class="filters"><input type="search" data-f="q" placeholder="Search cases, justices or words in the notes" aria-label="Search"><select data-f="term" aria-label="Year"><option value="">Year</option><option value="1958">1958 (3)</option><option value="1959">1959 (26)</option><option value="1960">1960 (143)</option><option value="1961">1961 (119)</option><option value="1962">1962 (65)</option><option value="1963">1963 (25)</option><option value="1964">1964 (83)</option><option value="1965">1965 (71)</option><option value="1966">1966 (40)</option><option value="1967">1967 (87)</option><option value="1968">1968 (131)</option><option value="1969">1969 (95)</option><option value="1970">1970 (107)</option><option value="1971">1971 (146)</option><option value="1972">1972 (143)</option><option value="1973">1973 (436)</option><option value="1974">1974 (647)</option><option value="1975">1975 (490)</option><option value="1976">1976 (1,033)</option><option value="1977">1977 (488)</option><option value="1978">1978 (450)</option><option value="1979">1979 (764)</option><option value="1980">1980 (447)</option><option value="1981">1981 (290)</option><option value="1982">1982 (485)</option><option value="1983">1983 (503)</option><option value="1984">1984 (492)</option><option value="1985">1985 (444)</option><option value="1986">1986 (246)</option><option value="1987">1987 (494)</option><option value="1988">1988 (440)</option><option value="1989">1989 (293)</option><option value="1990">1990 (207)</option><option value="1991">1991 (52)</option><option value="1992">1992 (213)</option><option value="1993">1993 (65)</option></select><select data-f="justice" aria-label="Justice"><option value="">Justice</option><option value="The Chief Justice">The Chief Justice (4,660)</option><option value="Black">Black (310)</option><option value="Blackmun">Blackmun (2,070)</option><option value="Brennan">Brennan (2,304)</option><option value="Clark">Clark (110)</option><option value="Douglas">Douglas (822)</option><option value="Fortas">Fortas (53)</option><option value="Frankfurter">Frankfurter (131)</option><option value="Ginsburg">Ginsburg (28)</option><option value="Goldberg">Goldberg (15)</option><option value="Harlan">Harlan (276)</option><option value="Kennedy">Kennedy (590)</option><option value="Marshall">Marshall (3,175)</option><option value="O&#x27;Connor">O&#x27;Connor (1,835)</option><option value="Powell">Powell (3,262)</option><option value="Rehnquist">Rehnquist (3,040)</option><option value="Scalia">Scalia (858)</option><option value="Souter">Souter (227)</option><option value="Stevens">Stevens (3,299)</option><option value="Stewart">Stewart (2,291)</option><option value="Thomas">Thomas (140)</option><option value="Warren">Warren (1)</option><option value="White">White (4,216)</option><option value="Whittaker">Whittaker (32)</option></select><select data-f="taker" aria-label="Note-taker (whose notes)"><option value="">Whose notes</option><option value="Blackmun">Blackmun (4,419)</option><option value="Brennan">Brennan (4,422)</option><option value="Marshall">Marshall (26)</option><option value="Powell">Powell (1,396)</option><option value="Rehnquist" disabled>Rehnquist (none)</option></select><span class="fcount"></span><button type="button" class="fclear" hidden>Clear filters</button></div><p class="empty" hidden>No pages match.</p>
+<div class="strip" aria-label="Pages"></div>
+<section class="panel" aria-live="polite"></section>
 </div>
 <div class="main" data-main="1" hidden>
-<p class="intro">Twelve boxes from Justice Brennan's notes for the 1980 term, transcribed by Zooniverse volunteers in 2017, shown with the new readings. Gold marks where the two readings differ.</p>
+<div class="lead"><div><h2>Beside the 2017 volunteers</h2><p class="sub">Twelve boxes volunteers typed line by line, next to the new readings.</p></div>
+<div class="legend"><span class="k1"><i></i>Box only</span><span class="k2"><i></i>With the volunteers' text</span><span class="k3"><i></i>Differs</span></div></div>
 
-<div class="filters"><input type="search" data-f="q" placeholder="Search cases, justices or words in the notes" aria-label="Search"><select data-f="justice" aria-label="Justice"><option value="">All justices</option><option value="The Chief Justice">The Chief Justice</option><option value="Blackmun">Blackmun</option><option value="Marshall">Marshall</option><option value="Powell">Powell</option><option value="Rehnquist">Rehnquist</option><option value="Stevens">Stevens</option><option value="Stewart">Stewart</option><option value="White">White</option></select><span class="fcount"></span><button type="button" class="fclear" hidden>Clear filters</button></div><p class="empty" hidden>No boxes match.</p>
-<nav role="tablist" aria-label="Boxes"><a href="#v1" role="tab" data-i="0" data-term="1980" data-taker="" data-justices="|The Chief Justice|" data-q="arkansas louisiana gas co. v. hall et al. 1980 the chief justice brennan whether filed rate doctrine violated exclusive juris since 23745 no matter how unreasonable equities make respondents the chief justice whether filed rate doctrine violated exclusive juris since z3745 no matter how unreasonable equities with respondents the chief justice whether filed rate doctrine violated exclusive juris since 23745 no matter how unreasonable equities with respondents" title="Arkansas Louisiana Gas Co. v. Hall et al."><span class="ph"><img src="img/9969294_260q70.webp" alt="" loading="lazy"></span><b>The Chief Justice</b><span class="nm">Arkansas Louisiana Gas Co. v. Hall</span></a><a href="#v2" role="tab" data-i="1" data-term="1980" data-taker="" data-justices="|Marshall|" data-q="arkansas louisiana gas co. v. hall et al. 1980 marshall brennan agree with cj agree with cj agree with cj marshall, j. agree with cj marshall, j. agree with cj" title="Arkansas Louisiana Gas Co. v. Hall et al."><span class="ph"><img src="img/9969295_260q70.webp" alt="" loading="lazy"></span><b>Marshall</b><span class="nm">Arkansas Louisiana Gas Co. v. Hall</span></a><a href="#v3" role="tab" data-i="2" data-term="1980" data-taker="" data-justices="|Stewart|" data-q="arkansas louisiana gas co. v. hall et al. 1980 stewart brennan out out stewart, j. gnt stewart, j. out" title="Arkansas Louisiana Gas Co. v. Hall et al."><span class="ph"><img src="img/9969296_260q70.webp" alt="" loading="lazy"></span><b>Stewart</b><span class="nm">Arkansas Louisiana Gas Co. v. Hall</span></a><a href="#v4" role="tab" data-i="3" data-term="1980" data-taker="" data-justices="|White|" data-q="arkansas louisiana gas co. v. hall et al. 1980 white brennan agree--basis of state sup ct is doctrine has no application to contract case. that&#x27;s really issue &amp; did reverse on that &amp; ferc opinion very good agree laws of state sup ct is has as application to contract case. thats issue + + i&#x27;d reverse on that + ferc opinion only good white, j. agree — basis of state sup ct is doctrine has no application to contract case. that&#x27;s really issue &amp; i&#x27;d reverse on that &amp; ferc opinion very good white, j. agree — basis of state sup ct is doctrine has no application to contract case. that&#x27;s really issue + i&#x27;d reverse on that + ferc opinion very good" title="Arkansas Louisiana Gas Co. v. Hall et al."><span class="ph"><img src="img/9969297_260q70.webp" alt="" loading="lazy"></span><b>White</b><span class="nm">Arkansas Louisiana Gas Co. v. Hall</span></a><a href="#v5" role="tab" data-i="4" data-term="1980" data-taker="" data-justices="|Blackmun|" data-q="northwest airlines, inc. v. transport workers union of america, afl-cio, et al. 1980 blackmun brennan ant gut blackmun, j. aff blackmun, j. aut" title="Northwest Airlines, Inc. v. Transport Workers Union of America, Afl-Cio, et al."><span class="ph"><img src="img/9981841_260q70.webp" alt="" loading="lazy"></span><b>Blackmun</b><span class="nm">Northwest Airlines v. Transport Workers Union of America</span></a><a href="#v6" role="tab" data-i="5" data-term="1980" data-taker="" data-justices="|Rehnquist|" data-q="northwest airlines, inc. v. transport workers union of america, afl-cio, et al. 1980 rehnquist brennan agree that equities are for contribution but our case has been against implying causes of action 194b answer to rule 14 certainly sup- port case against contribution rehnquist, j. agree that equities are for contribution but our cases have been against implying causes of action 1946 amendmt to rule 14 certainly sup- port case against contribution rehnquist, j. agree that equities are for contribution but our cases have been against implying causes of action 1946 amend^t to rule 14 certainly sup- port case against contribution" title="Northwest Airlines, Inc. v. Transport Workers Union of America, Afl-Cio, et al."><span class="ph"><img src="img/9981843_260q70.webp" alt="" loading="lazy"></span><b>Rehnquist</b><span class="nm">Northwest Airlines v. Transport Workers Union of America</span></a><a href="#v7" role="tab" data-i="6" data-term="1980" data-taker="" data-justices="|Blackmun|" data-q="united states v. swank et al. 1980 blackmun brennan three cases here lessor gets cost depletion under 631 (c). has lessee case ec owner ___ the presence of termination clause wi 30 days notice don&#x27;t agree lessee loses his ec owner interest entirely. paragon case - cited contract miners not lessees blackmun, j. three cases here lessor gets cost depletion under 631(c). has lessee an economic interest in presence of termination clause on 30 days notice don&#x27;t agree lessee loses his economic interest entirely. paragraph ated contract miners, not lessees blackmun, j. three cases here lessor gets cost depletion under 631(c). has lessee an economic interest in presence of termination clause on 30 days notice don&#x27;t agree lessee loses his economic interest entirely. paragon - cited contract miners, not lessees" title="United States v. Swank et al."><span class="ph"><img src="img/9981859_260q70.webp" alt="" loading="lazy"></span><b>Blackmun</b><span class="nm">United States v. Swank</span></a><a href="#v8" role="tab" data-i="7" data-term="1980" data-taker="" data-justices="|Powell|" data-q="united states v. swank et al. 1980 powell brennan haig agree with powell, j. agree with hab powell, j. agree with hab" title="United States v. Swank et al."><span class="ph"><img src="img/9981860_260q70.webp" alt="" loading="lazy"></span><b>Powell</b><span class="nm">United States v. Swank</span></a><a href="#v9" role="tab" data-i="8" data-term="1980" data-taker="" data-justices="|Rehnquist|" data-q="united states v. swank et al. 1980 rehnquist brennan agree should affirm on ground whatever law of contract means as a paragon bona fide lease has become without rehnquist, j. agree should affirm on ground whatever cas of contract owner as in paragon bona fide lessee has economic interest rehnquist, j. agree should affirm on ground whatever law of contract means as in paragon bona fide lease has economic interest" title="United States v. Swank et al."><span class="ph"><img src="img/9981861_260q70.webp" alt="" loading="lazy"></span><b>Rehnquist</b><span class="nm">United States v. Swank</span></a><a href="#v10" role="tab" data-i="9" data-term="1980" data-taker="" data-justices="|Powell|" data-q="staats, comptroller general of the united states, et al. v. bristol laboratories division of bristol-myers co. 1980 powell brennan agree that phrase has to mean something -- was added as limitations govt would read it right out of statute -- let congress do that agree that phase has to weave something - was added as limitations gout would had + night out of statue - let congress do that powell, j. agree that phrase has to mean something — was added as limitation govt would read it right out of statute — let congress do that powell, j. agree that phrase has to mean something — was added as limitations govt would read it right out of statute — let congress do that" title="Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co."><span class="ph"><img src="img/9981863_260q70.webp" alt="" loading="lazy"></span><b>Powell</b><span class="nm">Staats v. Bristol Laboratories Division of Bristol-Myers Co.</span></a><a href="#v11" role="tab" data-i="10" data-term="1980" data-taker="" data-justices="|Rehnquist|" data-q="staats, comptroller general of the united states, et al. v. bristol laboratories division of bristol-myers co. 1980 rehnquist brennan ct of ap sluffed off going back to statute that created gao. it is congressional watch- dog &amp; this act is simply substitute for cong hearings on govt procurement practices ct of ap sluffed off going back to statute that created gao. it is congressional watch dog + this act is simply substitute for long are govt procurement practices rehnquist, j. ct of ap sluffed off going back to statute that created gao. it is congressional watch- dog + this act is simply substitute for cong hearings on govt procurement practices rehnquist, j. ct of ap sluffed off going back to statute that created gao. it is congressional watch- dog + this act is simply substitute for cong hearings on govt procurement practices" title="Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co."><span class="ph"><img src="img/9981864_260q70.webp" alt="" loading="lazy"></span><b>Rehnquist</b><span class="nm">Staats v. Bristol Laboratories Division of Bristol-Myers Co.</span></a><a href="#v12" role="tab" data-i="11" data-term="1980" data-taker="" data-justices="|Stevens|" data-q="staats, comptroller general of the united states, et al. v. bristol laboratories division of bristol-myers co. 1980 stevens brennan the words man something &amp; suggest only &quot;direct costs&quot; the words mean something and suggest only &quot;direct costs&quot; stevens, j. the words mean something &amp; suggest only &quot;direct costs&quot; stevens, j. the words mean something &amp; suggest only &quot;direct costs&quot;" title="Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co."><span class="ph"><img src="img/9981865_260q70.webp" alt="" loading="lazy"></span><b>Stevens</b><span class="nm">Staats v. Bristol Laboratories Division of Bristol-Myers Co.</span></a></nav>
-<section role="tabpanel" data-i="0" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; The Chief Justice&#x27;s box &nbsp;/&nbsp; 1 volunteer</p><h2>Arkansas Louisiana Gas Co. v. Hall et al.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/c3ec60e2-3303-4de0-b3c5-4e7ff09f27c6.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1693 2067" preserveAspectRatio="none" class="ul"><line x1="760" y1="185" x2="1472" y2="163" stroke="#d9480f"/><line x1="64" y1="345" x2="1370" y2="294" stroke="#d9480f"/><line x1="42" y1="497" x2="1642" y2="417" stroke="#d9480f"/><line x1="35" y1="617" x2="1624" y2="552" stroke="#d9480f"/><line x1="60" y1="751" x2="1552" y2="686" stroke="#d9480f"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer C</p><pre>whether filed
-rate doctrine violated
-Exclusive juris since 23745
-no matter how unreasonable
-equities make respondents</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>The Chief Justice whether filed
-rate doctrine violated
-Exclusive juris since <mark>z3745</mark>
-no matter how unreasonable
-Equities with respondents</pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>The Chief Justice whether filed
-rate doctrine violated
-Exclusive juris since <mark>23745</mark>
-no matter how unreasonable
-Equities with respondents</pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="1" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Marshall&#x27;s box &nbsp;/&nbsp; 3 volunteers</p><h2>Arkansas Louisiana Gas Co. v. Hall et al.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/26ac83f6-630c-4fdb-a50f-aeeb1996bfa7.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1698 2330" preserveAspectRatio="none" class="ul"><line x1="212" y1="276" x2="1220" y2="230" stroke="#d9480f"/><line x1="143" y1="319" x2="1330" y2="313" stroke="#1971c2"/><line x1="237" y1="270" x2="1288" y2="270" stroke="#2f9e44"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer A</p><pre>agree with CJ</pre><p class="who"><i style="background:#1971c2"></i>Volunteer E</p><pre>agree with CJ</pre><p class="who"><i style="background:#2f9e44"></i>Volunteer C</p><pre>agree with CJ</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Marshall, J.
-agree with CJ</pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Marshall, J.
-agree with CJ</pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="2" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Stewart&#x27;s box &nbsp;/&nbsp; 2 volunteers</p><h2>Arkansas Louisiana Gas Co. v. Hall et al.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/bda1e86f-8335-4df7-8667-647c5ab5c0cc.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1659 2096" preserveAspectRatio="none" class="ul"><line x1="398" y1="221" x2="646" y2="221" stroke="#d9480f"/><line x1="411" y1="224" x2="642" y2="208" stroke="#1971c2"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer A</p><pre>out</pre><p class="who"><i style="background:#1971c2"></i>Volunteer D</p><pre>Out</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Stewart, J. <mark>Gnt</mark></pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Stewart, J. <mark>Out</mark></pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="3" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; White&#x27;s box &nbsp;/&nbsp; 3 volunteers</p><h2>Arkansas Louisiana Gas Co. v. Hall et al.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/13838e8c-a75a-486b-8be9-fb139d7f2ae6.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1655 2174" preserveAspectRatio="none" class="ul"><line x1="573" y1="156" x2="1447" y2="156" stroke="#1971c2"/><line x1="130" y1="328" x2="1565" y2="332" stroke="#1971c2"/><line x1="115" y1="508" x2="1542" y2="511" stroke="#1971c2"/><line x1="142" y1="656" x2="1546" y2="687" stroke="#1971c2"/><line x1="119" y1="859" x2="1378" y2="878" stroke="#1971c2"/><line x1="96" y1="1004" x2="1416" y2="1049" stroke="#1971c2"/><line x1="107" y1="1195" x2="1481" y2="1259" stroke="#1971c2"/><line x1="138" y1="1366" x2="665" y2="1378" stroke="#1971c2"/><line x1="550" y1="170" x2="834" y2="155" stroke="#2f9e44"/><line x1="1001" y1="163" x2="1482" y2="136" stroke="#2f9e44"/><line x1="152" y1="344" x2="891" y2="310" stroke="#2f9e44"/><line x1="977" y1="323" x2="1076" y2="323" stroke="#2f9e44"/><line x1="133" y1="522" x2="573" y2="511" stroke="#2f9e44"/><line x1="1434" y1="487" x2="1586" y2="480" stroke="#2f9e44"/><line x1="1179" y1="863" x2="1492" y2="862" stroke="#2f9e44"/><line x1="136" y1="998" x2="1145" y2="1017" stroke="#2f9e44"/><line x1="1296" y1="1029" x2="1464" y2="1029" stroke="#2f9e44"/><line x1="597" y1="1203" x2="1160" y2="1226" stroke="#2f9e44"/><line x1="1213" y1="1268" x2="1505" y2="1263" stroke="#2f9e44"/><line x1="127" y1="1466" x2="554" y2="1447" stroke="#2f9e44"/><line x1="107" y1="1202" x2="504" y2="1188" stroke="#2f9e44"/><line x1="1077" y1="680" x2="119" y2="690" stroke="#2f9e44"/><line x1="1245" y1="642" x2="1542" y2="647" stroke="#2f9e44"/><line x1="928" y1="843" x2="1054" y2="848" stroke="#2f9e44"/><line x1="368" y1="865" x2="844" y2="854" stroke="#2f9e44"/><line x1="718" y1="489" x2="1398" y2="504" stroke="#2f9e44"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer B</p><pre><span class=wait>typed nothing</span></pre><p class="who"><i style="background:#1971c2"></i>Volunteer C</p><pre>agree--basis of
-state Sup Ct is doctrine
-has no application to
-contract case. That&#x27;s
-really issue &amp; did
-reverse on that &amp;
-FERC opinion very
-good</pre><p class="who"><i style="background:#2f9e44"></i>Volunteer D</p><pre>agree laws of
-State Sup Ct is
-has as application to
-contract case. Thats
-issue + + I&#x27;d
-reverse on that +
-FERC opinion
-only
-good</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>White, J. agree — basis of
-State Sup Ct is doctrine
-has no application to
-contract case. That&#x27;s
-really issue <mark>&amp;</mark> I&#x27;d
-reverse on that <mark>&amp;</mark>
-FERC opinion very
-good</pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>White, J. agree — basis of
-State Sup Ct is doctrine
-has no application to
-contract case. That&#x27;s
-really issue <mark>+</mark> I&#x27;d
-reverse on that <mark>+</mark>
-FERC opinion very
-good</pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="4" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Blackmun&#x27;s box &nbsp;/&nbsp; 2 volunteers</p><h2>Northwest Airlines, Inc. v. Transport Workers Union of America, Afl-Cio, et al.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/af499f48-05db-4d9d-b675-13d680ed4540.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1576 1903" preserveAspectRatio="none" class="ul"><line x1="806" y1="214" x2="1123" y2="204" stroke="#d9480f"/><line x1="787" y1="208" x2="1114" y2="198" stroke="#1971c2"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer C</p><pre>ant</pre><p class="who"><i style="background:#1971c2"></i>Volunteer F</p><pre>gut</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Blackmun, J. <mark>aff</mark></pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Blackmun, J. <mark>aut</mark></pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="5" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Rehnquist&#x27;s box &nbsp;/&nbsp; 1 volunteer</p><h2>Northwest Airlines, Inc. v. Transport Workers Union of America, Afl-Cio, et al.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/e3f68bef-1200-41d9-9e0e-7c3138eba3ad.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1617 2179" preserveAspectRatio="none" class="ul"><line x1="615" y1="157" x2="1303" y2="134" stroke="#d9480f"/><line x1="144" y1="872" x2="1406" y2="845" stroke="#d9480f"/><line x1="427" y1="1086" x2="1429" y2="1063" stroke="#d9480f"/><line x1="152" y1="1228" x2="1506" y2="1186" stroke="#d9480f"/><line x1="156" y1="1385" x2="1556" y2="1323" stroke="#d9480f"/><line x1="159" y1="1515" x2="1127" y2="1473" stroke="#d9480f"/><line x1="156" y1="570" x2="1513" y2="509" stroke="#d9480f"/><line x1="152" y1="432" x2="1448" y2="352" stroke="#d9480f"/><line x1="136" y1="306" x2="1403" y2="237" stroke="#d9480f"/><line x1="136" y1="696" x2="1556" y2="685" stroke="#d9480f"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer C</p><pre>agree that
-equities are for
-contribution but
-our case has been
-against implying
-causes of action
-194b answer to
-Rule 14 certainly sup-
-port case against
-contribution</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Rehnquist, J. agree that
-equities are for
-contribution but
-our cases have been
-against implying
-<mark>causes</mark> of action
-
-1946 <mark>amendmt</mark> to
-Rule 14 certainly sup-
-port case against
-<mark>contribution</mark></pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Rehnquist, J. agree that
-equities are for
-contribution but
-our cases have been
-against implying
-<mark>Causes</mark> of action
-
-1946 <mark>amend^t</mark> to
-Rule 14 certainly sup-
-port case against
-<mark>Contribution</mark></pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="6" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Blackmun&#x27;s box &nbsp;/&nbsp; 1 volunteer</p><h2>United States v. Swank et al.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/ace15b5b-4184-40ce-acd7-e1a113c48677.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1574 2031" preserveAspectRatio="none" class="ul"><line x1="577" y1="157" x2="1474" y2="134" stroke="#d9480f"/><line x1="166" y1="739" x2="1464" y2="692" stroke="#d9480f"/><line x1="109" y1="1517" x2="920" y2="1555" stroke="#d9480f"/><line x1="171" y1="458" x2="1531" y2="405" stroke="#d9480f"/><line x1="147" y1="997" x2="1454" y2="997" stroke="#d9480f"/><line x1="171" y1="845" x2="1464" y2="831" stroke="#d9480f"/><line x1="133" y1="1108" x2="1326" y2="1122" stroke="#d9480f"/><line x1="147" y1="1365" x2="1469" y2="1461" stroke="#d9480f"/><line x1="152" y1="1227" x2="1493" y2="1294" stroke="#d9480f"/><line x1="171" y1="326" x2="1464" y2="292" stroke="#d9480f"/><line x1="166" y1="598" x2="1488" y2="555" stroke="#d9480f"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer E</p><pre>Three cases here
-lessor gets cost depletion
-under 631 (c). Has lessee
-case ec owner ___ the
-presence of termination
-clause wi 30 days notice
-don&#x27;t agree lessee loses
-his ec owner interest
-entirely. Paragon case -
-cited contract miners
-not lessees</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Blackmun, J. Three cases here
-lessor gets <mark>cost</mark> depletion
-under 631(c). Has lessee
-an economic interest in
-presence of termination
-clause on 30 days notice
-Don&#x27;t agree lessee loses
-his economic interest
-entirely. <mark>Paragraph</mark>
-<mark>ated</mark> contract miners,
-not lessees</pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Blackmun, J. Three cases here
-lessor gets <mark>[underlined:</mark> <mark>cost]</mark> depletion
-under 631(c). Has lessee
-an economic interest in
-presence of termination
-clause on 30 days notice
-Don&#x27;t agree lessee loses
-his economic interest
-entirely. <mark>Paragon</mark> <mark>-</mark>
-<mark>cited</mark> contract miners,
-not lessees</pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="7" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Powell&#x27;s box &nbsp;/&nbsp; 1 volunteer</p><h2>United States v. Swank et al.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/25f8d030-0178-48c8-af21-07713a9613fe.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1639 1769" preserveAspectRatio="none" class="ul"><line x1="403" y1="311" x2="1010" y2="281" stroke="#d9480f"/><line x1="1140" y1="229" x2="1383" y2="222" stroke="#d9480f"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer D</p><pre>Haig
-Agree with</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Powell, J. agree with HAB</pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Powell, J. agree with HAB</pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="8" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Rehnquist&#x27;s box &nbsp;/&nbsp; 1 volunteer</p><h2>United States v. Swank et al.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/bb5c90eb-b5dd-4779-998a-d7083b5ba007.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1571 1986" preserveAspectRatio="none" class="ul"><line x1="563" y1="213" x2="1411" y2="227" stroke="#d9480f"/><line x1="156" y1="317" x2="1316" y2="373" stroke="#d9480f"/><line x1="124" y1="492" x2="1484" y2="540" stroke="#d9480f"/><line x1="135" y1="634" x2="1428" y2="694" stroke="#d9480f"/><line x1="135" y1="767" x2="1404" y2="833" stroke="#d9480f"/><line x1="117" y1="934" x2="1285" y2="987" stroke="#d9480f"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer C</p><pre>Agree should
-affirm on ground
-whatever law of contract
-means as a Paragon
-bona fide lease has
-become without</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Rehnquist, J. Agree should
-affirm on ground
-whatever <mark>cas</mark> of contract
-<mark>owner</mark> as in Paragon
-bona fide <mark>lessee</mark> has
-economic interest</pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Rehnquist, J. Agree should
-affirm on ground
-whatever <mark>law</mark> of contract
-<mark>means</mark> as in Paragon
-bona fide <mark>lease</mark> has
-economic interest</pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="9" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Powell&#x27;s box &nbsp;/&nbsp; 2 volunteers</p><h2>Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/8b575dd7-e582-43d6-a654-3dc24529a1d3.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1721 1965" preserveAspectRatio="none" class="ul"><line x1="389" y1="197" x2="1565" y2="148" stroke="#d9480f"/><line x1="47" y1="352" x2="1682" y2="217" stroke="#d9480f"/><line x1="54" y1="435" x2="1458" y2="328" stroke="#d9480f"/><line x1="44" y1="548" x2="1624" y2="445" stroke="#d9480f"/><line x1="30" y1="659" x2="1403" y2="611" stroke="#d9480f"/><line x1="13" y1="776" x2="1189" y2="742" stroke="#d9480f"/><line x1="379" y1="193" x2="1528" y2="115" stroke="#1971c2"/><line x1="62" y1="325" x2="1664" y2="206" stroke="#1971c2"/><line x1="59" y1="406" x2="1390" y2="335" stroke="#1971c2"/><line x1="36" y1="519" x2="1551" y2="406" stroke="#1971c2"/><line x1="46" y1="642" x2="1264" y2="584" stroke="#1971c2"/><line x1="20" y1="768" x2="1076" y2="719" stroke="#1971c2"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer C</p><pre>agree that phrase
-has to mean something --
-was added as limitations
-Govt would read it right
-out of statute -- let
-congress do that</pre><p class="who"><i style="background:#1971c2"></i>Volunteer A</p><pre>agree that phase
-has to weave something -
-was added as limitations
-Gout would had + night
-out of statue - let
-congress do that</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Powell, J. agree <mark>that</mark> phrase
-has to mean something —
-was added as <mark>limitation</mark>
-Govt would read it right
-out of statute — let
-Congress do that</pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Powell, J. agree <mark>That</mark> phrase
-has to mean something —
-was added as <mark>limitations</mark>
-Govt would read it right
-out of statute — let
-Congress do that</pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="10" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Rehnquist&#x27;s box &nbsp;/&nbsp; 2 volunteers</p><h2>Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/edb644a5-cadb-474b-945c-3f363a16b0c3.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1573 1959" preserveAspectRatio="none" class="ul"><line x1="674" y1="148" x2="1455" y2="151" stroke="#d9480f"/><line x1="189" y1="265" x2="1530" y2="289" stroke="#d9480f"/><line x1="193" y1="365" x2="1162" y2="395" stroke="#d9480f"/><line x1="179" y1="485" x2="1520" y2="512" stroke="#d9480f"/><line x1="182" y1="595" x2="1393" y2="616" stroke="#d9480f"/><line x1="213" y1="698" x2="1503" y2="774" stroke="#d9480f"/><line x1="196" y1="832" x2="1307" y2="894" stroke="#d9480f"/><line x1="203" y1="977" x2="760" y2="1014" stroke="#d9480f"/><line x1="647" y1="138" x2="1448" y2="130" stroke="#1971c2"/><line x1="194" y1="261" x2="1021" y2="255" stroke="#1971c2"/><line x1="1086" y1="256" x2="1483" y2="260" stroke="#1971c2"/><line x1="199" y1="373" x2="776" y2="385" stroke="#1971c2"/><line x1="849" y1="399" x2="1200" y2="405" stroke="#1971c2"/><line x1="1222" y1="495" x2="1509" y2="500" stroke="#1971c2"/><line x1="218" y1="594" x2="514" y2="589" stroke="#1971c2"/><line x1="543" y1="576" x2="962" y2="581" stroke="#1971c2"/><line x1="797" y1="757" x2="1162" y2="757" stroke="#1971c2"/><line x1="229" y1="974" x2="695" y2="973" stroke="#1971c2"/><line x1="221" y1="479" x2="1166" y2="489" stroke="#1971c2"/><line x1="204" y1="824" x2="355" y2="822" stroke="#1971c2"/><line x1="207" y1="711" x2="696" y2="727" stroke="#1971c2"/><line x1="996" y1="599" x2="1379" y2="612" stroke="#1971c2"/><line x1="675" y1="885" x2="1355" y2="893" stroke="#1971c2"/><line x1="605" y1="869" x2="408" y2="855" stroke="#1971c2"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer C</p><pre>Ct of Ap sluffed
-off going back to statute
-that created GAO.
-It is congressional watch-
-dog &amp; this act is simply
-substitute for Cong hearings
-on govt procurement
-practices</pre><p class="who"><i style="background:#1971c2"></i>Volunteer D</p><pre>Ct of ap sluffed
-off going back to statute
-that created GAO.
-It is congressional watch
-dog + this act is simply
-substitute for long
-are govt
-procurement
-practices</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Rehnquist, J. Ct of ap sluffed
-off going back to statute
-that created GAO.
-It is congressional watch-
-dog + [underlined: this] act is simply
-substitute for Cong hearings
-on [underlined: govt] procurement
-practices</pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Rehnquist, J. Ct of ap sluffed
-off going back to statute
-that created GAO.
-It is congressional watch-
-dog + [underlined: this] act is simply
-substitute for Cong hearings
-on [underlined: govt] procurement
-practices</pre></div></div></article>
-</div></div>
-</section><section role="tabpanel" data-i="11" hidden>
-<div class="head"><div><p class="kicker">1980 term &nbsp;/&nbsp; Stevens&#x27;s box &nbsp;/&nbsp; 2 volunteers</p><h2>Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co.</h2></div><div class="pager"><span class="count"></span><button data-step="-1" aria-label="Previous">&#8249;</button><button data-step="1" aria-label="Next">&#8250;</button></div></div>
-<div class="spread"><div class="sheet"><img src="https://panoptes-uploads.zooniverse.org/subject_location/b3009d23-7767-4502-b333-aba8e134de81.jpeg" class="z" alt="The box">
-<svg viewBox="0 0 1673 1927" preserveAspectRatio="none" class="ul"><line x1="459" y1="200" x2="1541" y2="206" stroke="#d9480f"/><line x1="49" y1="311" x2="1396" y2="338" stroke="#d9480f"/><line x1="36" y1="423" x2="1115" y2="501" stroke="#d9480f"/><line x1="30" y1="310" x2="1506" y2="360" stroke="#1971c2"/><line x1="58" y1="442" x2="1153" y2="510" stroke="#1971c2"/><line x1="447" y1="175" x2="1592" y2="215" stroke="#1971c2"/></svg></div>
-<div class="boxes">
-<div class="vols"><h4>The volunteers' transcriptions, 2017</h4><p class="who"><i style="background:#d9480f"></i>Volunteer C</p><pre>The words man
-something &amp; suggest
-only &quot;direct costs&quot;</pre><p class="who"><i style="background:#1971c2"></i>Volunteer E</p><pre>the words mean
-something and suggest
-only &quot;direct costs&quot;</pre><p class="fn">Each coloured line on the image is one volunteer's underline.</p></div>
-<article class="box"><div class="pair"><div class="r r1"><h4>Box only</h4><pre>Stevens, J. The words mean
-something &amp; suggest
-only &quot;direct costs&quot;</pre></div><div class="r r2"><h4>With the volunteers' text</h4><pre>Stevens, J. The words mean
-something &amp; suggest
-only &quot;direct costs&quot;</pre></div></div></article>
-</div></div>
-</section>
+<div class="filters"><input type="search" data-f="q" placeholder="Search cases, justices or words in the notes" aria-label="Search"><select data-f="justice" aria-label="Justice"><option value="">Justice</option><option value="The Chief Justice">The Chief Justice</option><option value="Blackmun">Blackmun</option><option value="Marshall">Marshall</option><option value="Powell">Powell</option><option value="Rehnquist">Rehnquist</option><option value="Stevens">Stevens</option><option value="Stewart">Stewart</option><option value="White">White</option></select><span class="fcount"></span><button type="button" class="fclear" hidden>Clear filters</button></div><p class="empty" hidden>No boxes match.</p>
+<div class="strip" aria-label="Boxes"></div>
+<section class="panel" aria-live="polite"></section>
 </div>
-<div class="main" data-main="2" hidden>
-<p class="intro">Pages from the same papers on which no boxes were ever marked: whole conference forms, single slips and typed pages. On the forms each justice's section has now been found and read on its own, beside the reading of the whole page; gold marks where the two readings differ. Pages of one case sit together, in page order, and labels the page itself shows to be wrong are corrected, with a note.</p>
-<div class="filters"><input type="search" data-f="q" placeholder="Search cases, justices or words in the notes" aria-label="Search"><select data-f="term" aria-label="Year"><option value="">All years</option><option value="1958" disabled>1958 (none)</option><option value="1959" disabled>1959 (none)</option><option value="1960">1960 (3)</option><option value="1961">1961 (1)</option><option value="1962">1962 (4)</option><option value="1963" disabled>1963 (none)</option><option value="1964">1964 (4)</option><option value="1965">1965 (3)</option><option value="1966">1966 (1)</option><option value="1967">1967 (3)</option><option value="1968">1968 (6)</option><option value="1969">1969 (3)</option><option value="1970">1970 (47)</option><option value="1971">1971 (60)</option><option value="1972">1972 (31)</option><option value="1973">1973 (63)</option><option value="1974">1974 (58)</option><option value="1975">1975 (56)</option><option value="1976">1976 (36)</option><option value="1977">1977 (33)</option><option value="1978">1978 (29)</option><option value="1979">1979 (31)</option><option value="1980">1980 (540)</option><option value="1981">1981 (95)</option><option value="1982">1982 (135)</option><option value="1983">1983 (94)</option><option value="1984">1984 (317)</option><option value="1985">1985 (481)</option><option value="1986">1986 (431)</option><option value="1987">1987 (30)</option><option value="1988">1988 (108)</option><option value="1989">1989 (147)</option><option value="1990">1990 (12)</option><option value="1991" disabled>1991 (none)</option><option value="1992">1992 (7)</option><option value="1993">1993 (1)</option></select><select data-f="justice" aria-label="Justice"><option value="">All justices</option><option value="The Chief Justice">The Chief Justice (1,157)</option><option value="Black">Black (35)</option><option value="Blackmun">Blackmun (1,212)</option><option value="Brennan">Brennan (878)</option><option value="Clark">Clark (10)</option><option value="Douglas">Douglas (128)</option><option value="Fortas">Fortas (5)</option><option value="Frankfurter">Frankfurter (4)</option><option value="Ginsburg">Ginsburg (1)</option><option value="Goldberg">Goldberg (2)</option><option value="Harlan">Harlan (25)</option><option value="Kennedy">Kennedy (173)</option><option value="Marshall">Marshall (1,266)</option><option value="O&#x27;Connor">O&#x27;Connor (797)</option><option value="Powell">Powell (1,046)</option><option value="Rehnquist">Rehnquist (847)</option><option value="Scalia">Scalia (404)</option><option value="Souter">Souter (6)</option><option value="Stevens">Stevens (1,093)</option><option value="Stewart">Stewart (429)</option><option value="Thomas">Thomas (4)</option><option value="Warren" disabled>Warren (none)</option><option value="White">White (1,200)</option><option value="Whittaker">Whittaker (1)</option></select><select data-f="taker" aria-label="Note-taker"><option value="">All note-takers (whose notes)</option><option value="Blackmun">Blackmun (467)</option><option value="Brennan">Brennan (864)</option><option value="Marshall">Marshall (7)</option><option value="Powell">Powell (1,531)</option><option value="Rehnquist">Rehnquist (1)</option></select><span class="fcount"></span><button type="button" class="fclear" hidden>Clear filters</button></div><p class="empty" hidden>No pages match.</p>
-<nav role="tablist" aria-label="Pages without marked boxes"></nav>
-
-</div>
-<footer>Page images from the SCOTUS Notes project on Zooniverse. Click any image to enlarge it; use the arrow keys or the &#8249; &#8250; buttons to move between pages. Volunteers' names are withheld.</footer>
-</div>
+<!--t3--><div class="main" data-main="2" hidden>
+<div class="lead"><div><h2>Pages no one had marked</h2><p class="sub">Each justice's section found and read on its own, beside the whole page.</p></div>
+<div class="legend"><span class="k1"><i></i>Whole page</span><span class="k2"><i></i>Box only</span><span class="k3"><i></i>Differs</span><button type="button" data-fixes="2"><i></i>Corrected labels</button></div></div>
+<div class="filters"><input type="search" data-f="q" placeholder="Search cases, justices or words in the notes" aria-label="Search"><select data-f="term" aria-label="Year"><option value="">Year</option><option value="1958" disabled>1958 (none)</option><option value="1959" disabled>1959 (none)</option><option value="1960">1960 (3)</option><option value="1961">1961 (1)</option><option value="1962">1962 (4)</option><option value="1963" disabled>1963 (none)</option><option value="1964">1964 (4)</option><option value="1965">1965 (3)</option><option value="1966">1966 (1)</option><option value="1967">1967 (3)</option><option value="1968">1968 (6)</option><option value="1969">1969 (3)</option><option value="1970">1970 (47)</option><option value="1971">1971 (60)</option><option value="1972">1972 (31)</option><option value="1973">1973 (63)</option><option value="1974">1974 (58)</option><option value="1975">1975 (56)</option><option value="1976">1976 (36)</option><option value="1977">1977 (33)</option><option value="1978">1978 (29)</option><option value="1979">1979 (31)</option><option value="1980">1980 (540)</option><option value="1981">1981 (95)</option><option value="1982">1982 (135)</option><option value="1983">1983 (94)</option><option value="1984">1984 (317)</option><option value="1985">1985 (481)</option><option value="1986">1986 (431)</option><option value="1987">1987 (30)</option><option value="1988">1988 (108)</option><option value="1989">1989 (147)</option><option value="1990">1990 (12)</option><option value="1991" disabled>1991 (none)</option><option value="1992">1992 (7)</option><option value="1993">1993 (1)</option></select><select data-f="justice" aria-label="Justice"><option value="">Justice</option><option value="The Chief Justice">The Chief Justice (1,157)</option><option value="Black">Black (35)</option><option value="Blackmun">Blackmun (1,212)</option><option value="Brennan">Brennan (878)</option><option value="Clark">Clark (10)</option><option value="Douglas">Douglas (128)</option><option value="Fortas">Fortas (5)</option><option value="Frankfurter">Frankfurter (4)</option><option value="Ginsburg">Ginsburg (1)</option><option value="Goldberg">Goldberg (2)</option><option value="Harlan">Harlan (25)</option><option value="Kennedy">Kennedy (173)</option><option value="Marshall">Marshall (1,266)</option><option value="O&#x27;Connor">O&#x27;Connor (797)</option><option value="Powell">Powell (1,046)</option><option value="Rehnquist">Rehnquist (847)</option><option value="Scalia">Scalia (404)</option><option value="Souter">Souter (6)</option><option value="Stevens">Stevens (1,093)</option><option value="Stewart">Stewart (429)</option><option value="Thomas">Thomas (4)</option><option value="Warren" disabled>Warren (none)</option><option value="White">White (1,200)</option><option value="Whittaker">Whittaker (1)</option></select><select data-f="taker" aria-label="Note-taker (whose notes)"><option value="">Whose notes</option><option value="Blackmun">Blackmun (467)</option><option value="Brennan">Brennan (864)</option><option value="Marshall">Marshall (7)</option><option value="Powell">Powell (1,531)</option><option value="Rehnquist">Rehnquist (1)</option></select><span class="fcount"></span><button type="button" class="fclear" hidden>Clear filters</button></div><p class="empty" hidden>No pages match.</p>
+<div class="strip" aria-label="Pages without marked boxes"></div>
+<section class="panel" aria-live="polite"></section>
+</div><!--/t3-->
+</main>
+<footer><span>Page images: the SCOTUS Notes project on Zooniverse (Library of Congress, public domain).</span><span>← → to turn pages · click any image to zoom</span></footer>
+<div class="dock" aria-label="Page navigation"><button data-step="-1" aria-label="Previous">&#8249;</button><span class="dm"><span class="dt"></span><span class="dc"></span></span><button data-step="1" aria-label="Next">&#8250;</button></div>
 <div id="lb" aria-hidden="true"><div class="bar"><button data-z="1.25" title="Zoom in">+</button><button data-z="0.8" title="Zoom out">&minus;</button><button data-fit title="Fit to screen">&#10530;</button><button data-close title="Close">&#10005;</button></div>
 <img alt=""><div class="tip">Scroll to zoom, drag to move, double-click to fit, Esc to close</div></div>
+<script>window.ROWS=Object.assign(window.ROWS||{},{'1':[["The Chief Justice","Arkansas Louisiana Gas Co. v. Hall","Arkansas Louisiana Gas Co. v. Hall et al.","1980","",["The Chief Justice"],"arkansas louisiana gas co. v. hall et al. 1980 the chief justice brennan whether filed rate doctrine violated exclusive juris since 23745 no matter how unreasonable equities make respondents z3745 with","img/9969294_260q70.webp"],["Marshall","Arkansas Louisiana Gas Co. v. Hall","Arkansas Louisiana Gas Co. v. Hall et al.","1980","",["Marshall"],"arkansas louisiana gas co. v. hall et al. 1980 marshall brennan agree with cj marshall, j.","img/9969295_260q70.webp"],["Stewart","Arkansas Louisiana Gas Co. v. Hall","Arkansas Louisiana Gas Co. v. Hall et al.","1980","",["Stewart"],"arkansas louisiana gas co. v. hall et al. 1980 stewart brennan out stewart, j. gnt","img/9969296_260q70.webp"],["White","Arkansas Louisiana Gas Co. v. Hall","Arkansas Louisiana Gas Co. v. Hall et al.","1980","",["White"],"arkansas louisiana gas co. v. hall et al. 1980 white brennan agree--basis of state sup ct is doctrine has no application to contract case. that's really issue & did reverse on that ferc opinion very good agree laws as thats + i'd only white, j. — basis","img/9969297_260q70.webp"],["Blackmun","Northwest Airlines v. Transport Workers Union of America","Northwest Airlines, Inc. v. Transport Workers Union of America, Afl-Cio, et al.","1980","",["Blackmun"],"northwest airlines, inc. v. transport workers union of america, afl-cio, et al. 1980 blackmun brennan ant gut blackmun, j. aff aut","img/9981841_260q70.webp"],["Rehnquist","Northwest Airlines v. Transport Workers Union of America","Northwest Airlines, Inc. v. Transport Workers Union of America, Afl-Cio, et al.","1980","",["Rehnquist"],"northwest airlines, inc. v. transport workers union of america, afl-cio, et al. 1980 rehnquist brennan agree that equities are for contribution but our case has been against implying causes action 194b answer to rule 14 certainly sup- port rehnquist, j. cases have 1946 amendmt amend^t","img/9981843_260q70.webp"],["Blackmun","United States v. Swank","United States v. Swank et al.","1980","",["Blackmun"],"united states v. swank et al. 1980 blackmun brennan three cases here lessor gets cost depletion under 631 (c). has lessee case ec owner ___ the presence of termination clause wi 30 days notice don't agree loses his interest entirely. paragon - cited contract miners not lessees blackmun, j. 631(c). an economic in on paragraph ated miners,","img/9981859_260q70.webp"],["Powell","United States v. Swank","United States v. Swank et al.","1980","",["Powell"],"united states v. swank et al. 1980 powell brennan haig agree with powell, j. hab","img/9981860_260q70.webp"],["Rehnquist","United States v. Swank","United States v. Swank et al.","1980","",["Rehnquist"],"united states v. swank et al. 1980 rehnquist brennan agree should affirm on ground whatever law of contract means as a paragon bona fide lease has become without rehnquist, j. cas owner in lessee economic interest","img/9981861_260q70.webp"],["Powell","Staats v. Bristol Laboratories Division of Bristol-Myers Co.","Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co.","1980","",["Powell"],"staats, comptroller general of the united states, et al. v. bristol laboratories division bristol-myers co. 1980 powell brennan agree that phrase has to mean something -- was added as limitations govt would read it right out statute let congress do phase weave - gout had + night statue powell, j. — limitation","img/9981863_260q70.webp"],["Rehnquist","Staats v. Bristol Laboratories Division of Bristol-Myers Co.","Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co.","1980","",["Rehnquist"],"staats, comptroller general of the united states, et al. v. bristol laboratories division bristol-myers co. 1980 rehnquist brennan ct ap sluffed off going back to statute that created gao. it is congressional watch- dog & this act simply substitute for cong hearings on govt procurement practices watch + long are rehnquist, j.","img/9981864_260q70.webp"],["Stevens","Staats v. Bristol Laboratories Division of Bristol-Myers Co.","Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co.","1980","",["Stevens"],"staats, comptroller general of the united states, et al. v. bristol laboratories division bristol-myers co. 1980 stevens brennan words man something & suggest only \"direct costs\" mean and stevens, j.","img/9981865_260q70.webp"]]});window.LAZY=Object.assign(window.LAZY||{},{'1':["<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>The Chief Justice&#x27;s box<\/span><span>1 volunteer<\/span><\/div><h2>Arkansas Louisiana Gas Co. v. Hall et al.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/c3ec60e2-3303-4de0-b3c5-4e7ff09f27c6.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1693 2067\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"760\" y1=\"185\" x2=\"1472\" y2=\"163\" stroke=\"#d9480f\"/><line x1=\"64\" y1=\"345\" x2=\"1370\" y2=\"294\" stroke=\"#d9480f\"/><line x1=\"42\" y1=\"497\" x2=\"1642\" y2=\"417\" stroke=\"#d9480f\"/><line x1=\"35\" y1=\"617\" x2=\"1624\" y2=\"552\" stroke=\"#d9480f\"/><line x1=\"60\" y1=\"751\" x2=\"1552\" y2=\"686\" stroke=\"#d9480f\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer C<\/p><pre>whether filed\nrate doctrine violated\nExclusive juris since 23745\nno matter how unreasonable\nequities make respondents<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>The Chief Justice whether filed\nrate doctrine violated\nExclusive juris since <mark>z3745<\/mark>\nno matter how unreasonable\nEquities with respondents<\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>The Chief Justice whether filed\nrate doctrine violated\nExclusive juris since <mark>23745<\/mark>\nno matter how unreasonable\nEquities with respondents<\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Marshall&#x27;s box<\/span><span>3 volunteers<\/span><\/div><h2>Arkansas Louisiana Gas Co. v. Hall et al.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/26ac83f6-630c-4fdb-a50f-aeeb1996bfa7.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1698 2330\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"212\" y1=\"276\" x2=\"1220\" y2=\"230\" stroke=\"#d9480f\"/><line x1=\"143\" y1=\"319\" x2=\"1330\" y2=\"313\" stroke=\"#1971c2\"/><line x1=\"237\" y1=\"270\" x2=\"1288\" y2=\"270\" stroke=\"#2f9e44\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer A<\/p><pre>agree with CJ<\/pre><p class=\"who\"><i style=\"background:#1971c2\"><\/i>Volunteer E<\/p><pre>agree with CJ<\/pre><p class=\"who\"><i style=\"background:#2f9e44\"><\/i>Volunteer C<\/p><pre>agree with CJ<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Marshall, J.\nagree with CJ<\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Marshall, J.\nagree with CJ<\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Stewart&#x27;s box<\/span><span>2 volunteers<\/span><\/div><h2>Arkansas Louisiana Gas Co. v. Hall et al.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/bda1e86f-8335-4df7-8667-647c5ab5c0cc.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1659 2096\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"398\" y1=\"221\" x2=\"646\" y2=\"221\" stroke=\"#d9480f\"/><line x1=\"411\" y1=\"224\" x2=\"642\" y2=\"208\" stroke=\"#1971c2\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer A<\/p><pre>out<\/pre><p class=\"who\"><i style=\"background:#1971c2\"><\/i>Volunteer D<\/p><pre>Out<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Stewart, J. <mark>Gnt<\/mark><\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Stewart, J. <mark>Out<\/mark><\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>White&#x27;s box<\/span><span>3 volunteers<\/span><\/div><h2>Arkansas Louisiana Gas Co. v. Hall et al.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/13838e8c-a75a-486b-8be9-fb139d7f2ae6.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1655 2174\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"573\" y1=\"156\" x2=\"1447\" y2=\"156\" stroke=\"#1971c2\"/><line x1=\"130\" y1=\"328\" x2=\"1565\" y2=\"332\" stroke=\"#1971c2\"/><line x1=\"115\" y1=\"508\" x2=\"1542\" y2=\"511\" stroke=\"#1971c2\"/><line x1=\"142\" y1=\"656\" x2=\"1546\" y2=\"687\" stroke=\"#1971c2\"/><line x1=\"119\" y1=\"859\" x2=\"1378\" y2=\"878\" stroke=\"#1971c2\"/><line x1=\"96\" y1=\"1004\" x2=\"1416\" y2=\"1049\" stroke=\"#1971c2\"/><line x1=\"107\" y1=\"1195\" x2=\"1481\" y2=\"1259\" stroke=\"#1971c2\"/><line x1=\"138\" y1=\"1366\" x2=\"665\" y2=\"1378\" stroke=\"#1971c2\"/><line x1=\"550\" y1=\"170\" x2=\"834\" y2=\"155\" stroke=\"#2f9e44\"/><line x1=\"1001\" y1=\"163\" x2=\"1482\" y2=\"136\" stroke=\"#2f9e44\"/><line x1=\"152\" y1=\"344\" x2=\"891\" y2=\"310\" stroke=\"#2f9e44\"/><line x1=\"977\" y1=\"323\" x2=\"1076\" y2=\"323\" stroke=\"#2f9e44\"/><line x1=\"133\" y1=\"522\" x2=\"573\" y2=\"511\" stroke=\"#2f9e44\"/><line x1=\"1434\" y1=\"487\" x2=\"1586\" y2=\"480\" stroke=\"#2f9e44\"/><line x1=\"1179\" y1=\"863\" x2=\"1492\" y2=\"862\" stroke=\"#2f9e44\"/><line x1=\"136\" y1=\"998\" x2=\"1145\" y2=\"1017\" stroke=\"#2f9e44\"/><line x1=\"1296\" y1=\"1029\" x2=\"1464\" y2=\"1029\" stroke=\"#2f9e44\"/><line x1=\"597\" y1=\"1203\" x2=\"1160\" y2=\"1226\" stroke=\"#2f9e44\"/><line x1=\"1213\" y1=\"1268\" x2=\"1505\" y2=\"1263\" stroke=\"#2f9e44\"/><line x1=\"127\" y1=\"1466\" x2=\"554\" y2=\"1447\" stroke=\"#2f9e44\"/><line x1=\"107\" y1=\"1202\" x2=\"504\" y2=\"1188\" stroke=\"#2f9e44\"/><line x1=\"1077\" y1=\"680\" x2=\"119\" y2=\"690\" stroke=\"#2f9e44\"/><line x1=\"1245\" y1=\"642\" x2=\"1542\" y2=\"647\" stroke=\"#2f9e44\"/><line x1=\"928\" y1=\"843\" x2=\"1054\" y2=\"848\" stroke=\"#2f9e44\"/><line x1=\"368\" y1=\"865\" x2=\"844\" y2=\"854\" stroke=\"#2f9e44\"/><line x1=\"718\" y1=\"489\" x2=\"1398\" y2=\"504\" stroke=\"#2f9e44\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer B<\/p><pre><span class=wait>typed nothing<\/span><\/pre><p class=\"who\"><i style=\"background:#1971c2\"><\/i>Volunteer C<\/p><pre>agree--basis of\nstate Sup Ct is doctrine\nhas no application to\ncontract case. That&#x27;s\nreally issue &amp; did\nreverse on that &amp;\nFERC opinion very\ngood<\/pre><p class=\"who\"><i style=\"background:#2f9e44\"><\/i>Volunteer D<\/p><pre>agree laws of\nState Sup Ct is\nhas as application to\ncontract case. Thats\nissue + + I&#x27;d\nreverse on that +\nFERC opinion\nonly\ngood<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>White, J. agree — basis of\nState Sup Ct is doctrine\nhas no application to\ncontract case. That&#x27;s\nreally issue <mark>&amp;<\/mark> I&#x27;d\nreverse on that <mark>&amp;<\/mark>\nFERC opinion very\ngood<\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>White, J. agree — basis of\nState Sup Ct is doctrine\nhas no application to\ncontract case. That&#x27;s\nreally issue <mark>+<\/mark> I&#x27;d\nreverse on that <mark>+<\/mark>\nFERC opinion very\ngood<\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Blackmun&#x27;s box<\/span><span>2 volunteers<\/span><\/div><h2>Northwest Airlines, Inc. v. Transport Workers Union of America, Afl-Cio, et al.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/af499f48-05db-4d9d-b675-13d680ed4540.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1576 1903\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"806\" y1=\"214\" x2=\"1123\" y2=\"204\" stroke=\"#d9480f\"/><line x1=\"787\" y1=\"208\" x2=\"1114\" y2=\"198\" stroke=\"#1971c2\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer C<\/p><pre>ant<\/pre><p class=\"who\"><i style=\"background:#1971c2\"><\/i>Volunteer F<\/p><pre>gut<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Blackmun, J. <mark>aff<\/mark><\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Blackmun, J. <mark>aut<\/mark><\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Rehnquist&#x27;s box<\/span><span>1 volunteer<\/span><\/div><h2>Northwest Airlines, Inc. v. Transport Workers Union of America, Afl-Cio, et al.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/e3f68bef-1200-41d9-9e0e-7c3138eba3ad.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1617 2179\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"615\" y1=\"157\" x2=\"1303\" y2=\"134\" stroke=\"#d9480f\"/><line x1=\"144\" y1=\"872\" x2=\"1406\" y2=\"845\" stroke=\"#d9480f\"/><line x1=\"427\" y1=\"1086\" x2=\"1429\" y2=\"1063\" stroke=\"#d9480f\"/><line x1=\"152\" y1=\"1228\" x2=\"1506\" y2=\"1186\" stroke=\"#d9480f\"/><line x1=\"156\" y1=\"1385\" x2=\"1556\" y2=\"1323\" stroke=\"#d9480f\"/><line x1=\"159\" y1=\"1515\" x2=\"1127\" y2=\"1473\" stroke=\"#d9480f\"/><line x1=\"156\" y1=\"570\" x2=\"1513\" y2=\"509\" stroke=\"#d9480f\"/><line x1=\"152\" y1=\"432\" x2=\"1448\" y2=\"352\" stroke=\"#d9480f\"/><line x1=\"136\" y1=\"306\" x2=\"1403\" y2=\"237\" stroke=\"#d9480f\"/><line x1=\"136\" y1=\"696\" x2=\"1556\" y2=\"685\" stroke=\"#d9480f\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer C<\/p><pre>agree that\nequities are for\ncontribution but\nour case has been\nagainst implying\ncauses of action\n194b answer to\nRule 14 certainly sup-\nport case against\ncontribution<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Rehnquist, J. agree that\nequities are for\ncontribution but\nour cases have been\nagainst implying\n<mark>causes<\/mark> of action\n\n1946 <mark>amendmt<\/mark> to\nRule 14 certainly sup-\nport case against\n<mark>contribution<\/mark><\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Rehnquist, J. agree that\nequities are for\ncontribution but\nour cases have been\nagainst implying\n<mark>Causes<\/mark> of action\n\n1946 <mark>amend^t<\/mark> to\nRule 14 certainly sup-\nport case against\n<mark>Contribution<\/mark><\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Blackmun&#x27;s box<\/span><span>1 volunteer<\/span><\/div><h2>United States v. Swank et al.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/ace15b5b-4184-40ce-acd7-e1a113c48677.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1574 2031\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"577\" y1=\"157\" x2=\"1474\" y2=\"134\" stroke=\"#d9480f\"/><line x1=\"166\" y1=\"739\" x2=\"1464\" y2=\"692\" stroke=\"#d9480f\"/><line x1=\"109\" y1=\"1517\" x2=\"920\" y2=\"1555\" stroke=\"#d9480f\"/><line x1=\"171\" y1=\"458\" x2=\"1531\" y2=\"405\" stroke=\"#d9480f\"/><line x1=\"147\" y1=\"997\" x2=\"1454\" y2=\"997\" stroke=\"#d9480f\"/><line x1=\"171\" y1=\"845\" x2=\"1464\" y2=\"831\" stroke=\"#d9480f\"/><line x1=\"133\" y1=\"1108\" x2=\"1326\" y2=\"1122\" stroke=\"#d9480f\"/><line x1=\"147\" y1=\"1365\" x2=\"1469\" y2=\"1461\" stroke=\"#d9480f\"/><line x1=\"152\" y1=\"1227\" x2=\"1493\" y2=\"1294\" stroke=\"#d9480f\"/><line x1=\"171\" y1=\"326\" x2=\"1464\" y2=\"292\" stroke=\"#d9480f\"/><line x1=\"166\" y1=\"598\" x2=\"1488\" y2=\"555\" stroke=\"#d9480f\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer E<\/p><pre>Three cases here\nlessor gets cost depletion\nunder 631 (c). Has lessee\ncase ec owner ___ the\npresence of termination\nclause wi 30 days notice\ndon&#x27;t agree lessee loses\nhis ec owner interest\nentirely. Paragon case -\ncited contract miners\nnot lessees<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Blackmun, J. Three cases here\nlessor gets <mark>cost<\/mark> depletion\nunder 631(c). Has lessee\nan economic interest in\npresence of termination\nclause on 30 days notice\nDon&#x27;t agree lessee loses\nhis economic interest\nentirely. <mark>Paragraph<\/mark>\n<mark>ated<\/mark> contract miners,\nnot lessees<\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Blackmun, J. Three cases here\nlessor gets <mark>[underlined:<\/mark> <mark>cost]<\/mark> depletion\nunder 631(c). Has lessee\nan economic interest in\npresence of termination\nclause on 30 days notice\nDon&#x27;t agree lessee loses\nhis economic interest\nentirely. <mark>Paragon<\/mark> <mark>-<\/mark>\n<mark>cited<\/mark> contract miners,\nnot lessees<\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Powell&#x27;s box<\/span><span>1 volunteer<\/span><\/div><h2>United States v. Swank et al.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/25f8d030-0178-48c8-af21-07713a9613fe.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1639 1769\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"403\" y1=\"311\" x2=\"1010\" y2=\"281\" stroke=\"#d9480f\"/><line x1=\"1140\" y1=\"229\" x2=\"1383\" y2=\"222\" stroke=\"#d9480f\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer D<\/p><pre>Haig\nAgree with<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Powell, J. agree with HAB<\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Powell, J. agree with HAB<\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Rehnquist&#x27;s box<\/span><span>1 volunteer<\/span><\/div><h2>United States v. Swank et al.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/bb5c90eb-b5dd-4779-998a-d7083b5ba007.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1571 1986\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"563\" y1=\"213\" x2=\"1411\" y2=\"227\" stroke=\"#d9480f\"/><line x1=\"156\" y1=\"317\" x2=\"1316\" y2=\"373\" stroke=\"#d9480f\"/><line x1=\"124\" y1=\"492\" x2=\"1484\" y2=\"540\" stroke=\"#d9480f\"/><line x1=\"135\" y1=\"634\" x2=\"1428\" y2=\"694\" stroke=\"#d9480f\"/><line x1=\"135\" y1=\"767\" x2=\"1404\" y2=\"833\" stroke=\"#d9480f\"/><line x1=\"117\" y1=\"934\" x2=\"1285\" y2=\"987\" stroke=\"#d9480f\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer C<\/p><pre>Agree should\naffirm on ground\nwhatever law of contract\nmeans as a Paragon\nbona fide lease has\nbecome without<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Rehnquist, J. Agree should\naffirm on ground\nwhatever <mark>cas<\/mark> of contract\n<mark>owner<\/mark> as in Paragon\nbona fide <mark>lessee<\/mark> has\neconomic interest<\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Rehnquist, J. Agree should\naffirm on ground\nwhatever <mark>law<\/mark> of contract\n<mark>means<\/mark> as in Paragon\nbona fide <mark>lease<\/mark> has\neconomic interest<\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Powell&#x27;s box<\/span><span>2 volunteers<\/span><\/div><h2>Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/8b575dd7-e582-43d6-a654-3dc24529a1d3.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1721 1965\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"389\" y1=\"197\" x2=\"1565\" y2=\"148\" stroke=\"#d9480f\"/><line x1=\"47\" y1=\"352\" x2=\"1682\" y2=\"217\" stroke=\"#d9480f\"/><line x1=\"54\" y1=\"435\" x2=\"1458\" y2=\"328\" stroke=\"#d9480f\"/><line x1=\"44\" y1=\"548\" x2=\"1624\" y2=\"445\" stroke=\"#d9480f\"/><line x1=\"30\" y1=\"659\" x2=\"1403\" y2=\"611\" stroke=\"#d9480f\"/><line x1=\"13\" y1=\"776\" x2=\"1189\" y2=\"742\" stroke=\"#d9480f\"/><line x1=\"379\" y1=\"193\" x2=\"1528\" y2=\"115\" stroke=\"#1971c2\"/><line x1=\"62\" y1=\"325\" x2=\"1664\" y2=\"206\" stroke=\"#1971c2\"/><line x1=\"59\" y1=\"406\" x2=\"1390\" y2=\"335\" stroke=\"#1971c2\"/><line x1=\"36\" y1=\"519\" x2=\"1551\" y2=\"406\" stroke=\"#1971c2\"/><line x1=\"46\" y1=\"642\" x2=\"1264\" y2=\"584\" stroke=\"#1971c2\"/><line x1=\"20\" y1=\"768\" x2=\"1076\" y2=\"719\" stroke=\"#1971c2\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer C<\/p><pre>agree that phrase\nhas to mean something --\nwas added as limitations\nGovt would read it right\nout of statute -- let\ncongress do that<\/pre><p class=\"who\"><i style=\"background:#1971c2\"><\/i>Volunteer A<\/p><pre>agree that phase\nhas to weave something -\nwas added as limitations\nGout would had + night\nout of statue - let\ncongress do that<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Powell, J. agree <mark>that<\/mark> phrase\nhas to mean something —\nwas added as <mark>limitation<\/mark>\nGovt would read it right\nout of statute — let\nCongress do that<\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Powell, J. agree <mark>That<\/mark> phrase\nhas to mean something —\nwas added as <mark>limitations<\/mark>\nGovt would read it right\nout of statute — let\nCongress do that<\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Rehnquist&#x27;s box<\/span><span>2 volunteers<\/span><\/div><h2>Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/edb644a5-cadb-474b-945c-3f363a16b0c3.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1573 1959\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"674\" y1=\"148\" x2=\"1455\" y2=\"151\" stroke=\"#d9480f\"/><line x1=\"189\" y1=\"265\" x2=\"1530\" y2=\"289\" stroke=\"#d9480f\"/><line x1=\"193\" y1=\"365\" x2=\"1162\" y2=\"395\" stroke=\"#d9480f\"/><line x1=\"179\" y1=\"485\" x2=\"1520\" y2=\"512\" stroke=\"#d9480f\"/><line x1=\"182\" y1=\"595\" x2=\"1393\" y2=\"616\" stroke=\"#d9480f\"/><line x1=\"213\" y1=\"698\" x2=\"1503\" y2=\"774\" stroke=\"#d9480f\"/><line x1=\"196\" y1=\"832\" x2=\"1307\" y2=\"894\" stroke=\"#d9480f\"/><line x1=\"203\" y1=\"977\" x2=\"760\" y2=\"1014\" stroke=\"#d9480f\"/><line x1=\"647\" y1=\"138\" x2=\"1448\" y2=\"130\" stroke=\"#1971c2\"/><line x1=\"194\" y1=\"261\" x2=\"1021\" y2=\"255\" stroke=\"#1971c2\"/><line x1=\"1086\" y1=\"256\" x2=\"1483\" y2=\"260\" stroke=\"#1971c2\"/><line x1=\"199\" y1=\"373\" x2=\"776\" y2=\"385\" stroke=\"#1971c2\"/><line x1=\"849\" y1=\"399\" x2=\"1200\" y2=\"405\" stroke=\"#1971c2\"/><line x1=\"1222\" y1=\"495\" x2=\"1509\" y2=\"500\" stroke=\"#1971c2\"/><line x1=\"218\" y1=\"594\" x2=\"514\" y2=\"589\" stroke=\"#1971c2\"/><line x1=\"543\" y1=\"576\" x2=\"962\" y2=\"581\" stroke=\"#1971c2\"/><line x1=\"797\" y1=\"757\" x2=\"1162\" y2=\"757\" stroke=\"#1971c2\"/><line x1=\"229\" y1=\"974\" x2=\"695\" y2=\"973\" stroke=\"#1971c2\"/><line x1=\"221\" y1=\"479\" x2=\"1166\" y2=\"489\" stroke=\"#1971c2\"/><line x1=\"204\" y1=\"824\" x2=\"355\" y2=\"822\" stroke=\"#1971c2\"/><line x1=\"207\" y1=\"711\" x2=\"696\" y2=\"727\" stroke=\"#1971c2\"/><line x1=\"996\" y1=\"599\" x2=\"1379\" y2=\"612\" stroke=\"#1971c2\"/><line x1=\"675\" y1=\"885\" x2=\"1355\" y2=\"893\" stroke=\"#1971c2\"/><line x1=\"605\" y1=\"869\" x2=\"408\" y2=\"855\" stroke=\"#1971c2\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer C<\/p><pre>Ct of Ap sluffed\noff going back to statute\nthat created GAO.\nIt is congressional watch-\ndog &amp; this act is simply\nsubstitute for Cong hearings\non govt procurement\npractices<\/pre><p class=\"who\"><i style=\"background:#1971c2\"><\/i>Volunteer D<\/p><pre>Ct of ap sluffed\noff going back to statute\nthat created GAO.\nIt is congressional watch\ndog + this act is simply\nsubstitute for long\nare govt\nprocurement\npractices<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Rehnquist, J. Ct of ap sluffed\noff going back to statute\nthat created GAO.\nIt is congressional watch-\ndog + [underlined: this] act is simply\nsubstitute for Cong hearings\non [underlined: govt] procurement\npractices<\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Rehnquist, J. Ct of ap sluffed\noff going back to statute\nthat created GAO.\nIt is congressional watch-\ndog + [underlined: this] act is simply\nsubstitute for Cong hearings\non [underlined: govt] procurement\npractices<\/pre><\/div><\/div><\/article>\n<\/div><\/div>","<div class=\"head\"><div><div class=\"chips\"><span>1980 term<\/span><span>Stevens&#x27;s box<\/span><span>2 volunteers<\/span><\/div><h2>Staats, Comptroller General of the United States, et al. v. Bristol Laboratories Division of Bristol-Myers Co.<\/h2><\/div><div class=\"pager\"><span class=\"count\"><\/span><button data-step=\"-1\" aria-label=\"Previous\">&#8249;<\/button><button data-step=\"1\" aria-label=\"Next\">&#8250;<\/button><\/div><\/div>\n<div class=\"spread\"><div class=\"sheet\"><img src=\"https://panoptes-uploads.zooniverse.org/subject_location/b3009d23-7767-4502-b333-aba8e134de81.jpeg\" class=\"z\" alt=\"The box\">\n<svg viewBox=\"0 0 1673 1927\" preserveAspectRatio=\"none\" class=\"ul\"><line x1=\"459\" y1=\"200\" x2=\"1541\" y2=\"206\" stroke=\"#d9480f\"/><line x1=\"49\" y1=\"311\" x2=\"1396\" y2=\"338\" stroke=\"#d9480f\"/><line x1=\"36\" y1=\"423\" x2=\"1115\" y2=\"501\" stroke=\"#d9480f\"/><line x1=\"30\" y1=\"310\" x2=\"1506\" y2=\"360\" stroke=\"#1971c2\"/><line x1=\"58\" y1=\"442\" x2=\"1153\" y2=\"510\" stroke=\"#1971c2\"/><line x1=\"447\" y1=\"175\" x2=\"1592\" y2=\"215\" stroke=\"#1971c2\"/><\/svg><\/div>\n<div class=\"boxes\">\n<div class=\"vols\"><h4>The volunteers' transcriptions, 2017<\/h4><p class=\"who\"><i style=\"background:#d9480f\"><\/i>Volunteer C<\/p><pre>The words man\nsomething &amp; suggest\nonly &quot;direct costs&quot;<\/pre><p class=\"who\"><i style=\"background:#1971c2\"><\/i>Volunteer E<\/p><pre>the words mean\nsomething and suggest\nonly &quot;direct costs&quot;<\/pre><p class=\"fn\">Each coloured line on the image is one volunteer's underline.<\/p><\/div>\n<article class=\"box\"><div class=\"pair\"><div class=\"r r1\"><h4>Box only<\/h4><pre>Stevens, J. The words mean\nsomething &amp; suggest\nonly &quot;direct costs&quot;<\/pre><\/div><div class=\"r r2\"><h4>With the volunteers' text<\/h4><pre>Stevens, J. The words mean\nsomething &amp; suggest\nonly &quot;direct costs&quot;<\/pre><\/div><\/div><\/article>\n<\/div><\/div>"]});</script>
 <script>
 document.addEventListener('load',e=>{if(e.target.tagName==='IMG')e.target.classList.add('ld')},true);
 const __seen=()=>document.querySelectorAll('img').forEach(i=>{if(i.complete&&i.naturalWidth)i.classList.add('ld')});
 __seen();document.addEventListener('DOMContentLoaded',__seen);addEventListener('load',__seen);
-window.__ready=(async()=>{const V='f8db8fa94e',ALL=await (await fetch('data/index.json?v='+V)).json(),navs={},
-e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]),
-C={},chunk=f=>C[f]||(C[f]=fetch('data/p/'+f).then(r=>r.json())),
-warm=h=>(h&&h.match(/src="[^"]+"/g)||[]).forEach(m=>{const i=new Image();i.decoding='async';i.src=m.slice(5,-1)});
-for(const K in ALL){const D=ALL[K],nav=document.querySelector(`.main[data-main="${K}"] nav`),pre=K==='2'?'w':'';if(!nav||!D.p.length)continue;navs[K]=nav;
- let h='',sec='';D.p.forEach((r,n)=>{const[t,sh,tk,js]=r,T=D.T[tk]||'',J=js.map(j=>D.J[j]);
-  h+=`<a href="#${pre}${n+1}" role="tab" data-i="${n}" data-term="${e(t)}" data-taker="${e(T)}" data-justices="|${e(J.join('|'))}|" data-q="${e((sh+' '+t+' '+T+' '+J.join(' ')).toLowerCase())}" title="${e(sh)}"><span class="ph" data-n="${n}"></span><b>${e(t)}</b><span class="nm">${e(sh)}</span></a>`;
-  sec+=`<section role="tabpanel" data-i="${n}" data-lazy="${n}" hidden></section>`});
- nav.innerHTML=h;nav.insertAdjacentHTML('afterend',sec);
- const io=new IntersectionObserver(es=>es.forEach(x=>{if(!x.isIntersecting)return;const p=x.target,n=+p.dataset.n,c=n%D.per;
-  p.style.backgroundImage=`url(img/s/${D.s[Math.floor(n/D.per)]})`;p.style.backgroundPosition=`-${(c%D.cols)*146}px -${Math.floor(c/D.cols)*116}px`;io.unobserve(p)}),{root:nav,rootMargin:'0px 900px'});
- nav.querySelectorAll('.ph').forEach(p=>io.observe(p));
- const seen=new Set();nav.addEventListener('pointerover',ev=>{const t=ev.target.closest('a');if(!t)return;const n=+t.dataset.i;if(seen.has(n))return;seen.add(n);
-  chunk(D.c[Math.floor(n/D.ch)]).then(a=>warm(a[n%D.ch]))})}
-window.fillPanel=(P,K)=>{const D=ALL[K],n=+P.dataset.lazy,k=Math.floor(n/D.ch),j=n%D.ch;if(j>=D.ch-5&&D.c[k+1])chunk(D.c[k+1]);if(j<5&&k>0)chunk(D.c[k-1]);
- return chunk(D.c[k]).then(a=>{if(!P.firstChild)P.innerHTML=a[j];setTimeout(()=>{warm(a[j+1]);warm(a[j-1])},300)})};
-window.__search=fetch('data/q.json?v='+V).then(r=>r.json()).then(Q=>{for(const K in Q){const nav=navs[K];if(!nav)continue;const tabs=nav.querySelectorAll('a');
- Q[K].forEach((q,n)=>{if(tabs[n])tabs[n].dataset.q=q})}window.__filterAll&&window.__filterAll()});
+window.__ready=(async()=>{const V='5f9309f4cf',ALL=await (await fetch('data/index.json?v='+V)).json(),C={},
+ chunk=f=>C[f]||(C[f]=fetch('data/p/'+f).then(r=>{if(!r.ok)throw new Error(r.status);return r.json()}).catch(e=>{delete C[f];throw e})),
+ warm=h=>{const m=h&&h.match(/src="([^"]+)"/);if(m){const i=new Image();i.decoding='async';i.src=m[1]}};
+ window.ROWS=window.ROWS||{};
+ for(const K in ALL){const D=ALL[K];ROWS[K]=D.p.map(([t,sh,tk,js])=>[t,sh,sh,t,D.T[tk]||'',js.map(j=>D.J[j]),'',null])}
+ window.THUMB=(K,n)=>{const D=ALL[K];if(!D)return'';const c=n%D.per;
+  return ` style="background:var(--paper2) url(img/s/${D.s[Math.floor(n/D.per)]}) no-repeat -${(c%D.cols)*146}px -${Math.floor(c/D.cols)*116}px/${D.cols*146}px auto"`};
+ window.fillPanel=(K,n)=>{const D=ALL[K],k=Math.floor(n/D.ch),j=n%D.ch;
+  if(j>=D.ch-4&&D.c[k+1])chunk(D.c[k+1]).catch(()=>{});if(j<4&&k>0)chunk(D.c[k-1]).catch(()=>{});
+  return chunk(D.c[k]).then(a=>{setTimeout(()=>warm(a[j+1]),500);return a[j]})};
+ let S;window.loadSearch=()=>S||(S=fetch('data/q.json?v='+V).then(r=>r.json()).then(Q=>{for(const K in Q)(Q[K]||[]).forEach((q,n)=>{const r=ROWS[K]&&ROWS[K][n];if(r)r[6]=q})}).catch(e=>{S=null;throw e}));
 })();
 </script>
 <script>
-window.__init=()=>{const mains=[...document.querySelectorAll('.main')],mbtn=[...document.querySelectorAll('.chapters button')];
-const areas=mains.map(m=>{const tabs=[...m.querySelectorAll('nav a')];return{tabs,panels:[...m.querySelectorAll('section[role=tabpanel]')],nav:m.querySelector('nav'),cur:0,vis:tabs.map((t,k)=>k),root:m}});
-let active=0;
-const PRE={'0':'','1':'v','2':'w'},KEY=j=>mains[j].dataset.main,
-  hash=()=>{try{const k=KEY(active);history.replaceState(null,'','#'+(k==='o'?'overview':PRE[k]+(areas[active].cur+1)))}catch(e){}};
-function centre(a,smooth){const t=a.tabs[a.cur];if(t&&a.nav){const left=t.offsetLeft-a.nav.clientWidth/2+t.clientWidth/2;if(smooth)a.nav.scrollTo({left,behavior:'smooth'});else a.nav.scrollLeft=left}}
-function show(i,scroll=true){const a=areas[active];if(!a.panels.length||!a.vis.length)return;if(!a.vis.includes(i))i=a.vis[0];
-  const P=a.panels[i],K=a.root.dataset.main;if(P.dataset.lazy&&!P.firstChild){if(window.LAZY)P.innerHTML=LAZY[K][+P.dataset.lazy];
-    else if(window.fillPanel)window.fillPanel(P,K).then(()=>{if(a.cur===i&&P.firstChild)show(i,false)})}a.tabs.forEach((t,k)=>t.setAttribute('aria-selected',k===i));a.panels.forEach((p,k)=>p.hidden=k!==i);a.cur=i;const c=a.panels[i].querySelector('.count');if(c)c.textContent=(a.vis.indexOf(i)+1)+' of '+a.vis.length;hash();centre(a,scroll);
-  if(scroll&&a.nav){const y=a.nav.getBoundingClientRect().top+scrollY-12;if(scrollY>y)scrollTo({top:y})}}
-function main(j,scroll=true){active=j;mains.forEach((m,k)=>m.hidden=k!==j);mbtn.forEach((b,k)=>b.setAttribute('aria-selected',k===j));
-  if(KEY(j)==='o'){hash();window.drawOverview&&window.drawOverview();return}show(areas[j].cur,scroll)}
-window.__goto=(key,vals)=>{const j=mains.findIndex(m=>m.dataset.main===key);if(j<0)return;const a=areas[j],f=a.root.querySelector('.filters');
-  if(f){f.querySelectorAll('input,select').forEach(x=>x.value='');for(const k in vals){const x=f.querySelector('[data-f='+k+']');if(x)x.value=vals[k]}}
-  main(j,false);if(f)filter(a);scrollTo({top:document.querySelector('.chapters').getBoundingClientRect().top+scrollY-8,behavior:'smooth'})};
-areas.forEach((a,j)=>a.tabs.forEach((t,k)=>t.onclick=e=>{e.preventDefault();active=j;show(k)}));mbtn.forEach((b,j)=>b.onclick=()=>main(j));
-function step(d){const a=areas[active];if(!a.vis.length)return;const k=a.vis.indexOf(a.cur);show(a.vis[((k<0?0:k+d)%a.vis.length+a.vis.length)%a.vis.length])}
-document.addEventListener('click',e=>{const b=e.target.closest('[data-step]');if(b)step(+b.dataset.step)});
-// Filters work together, and each menu counts the pages that match every OTHER filter (so a menu never hides the
-// choices you could switch to): pick a year and the justice and note-taker menus show only that year's counts.
-const fval=(f,k)=>(f.querySelector('[data-f='+k+']')||{}).value||'';
-function facets(a){return a.meta||(a.meta=a.tabs.map(t=>({term:t.dataset.term||'',taker:t.dataset.taker||'',js:[...new Set((t.dataset.justices||'').split('|').filter(Boolean))]})))}
+window.__init=()=>{
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const fmt=n=>n.toLocaleString('en-US'),esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches,PRE={'0':'','1':'v','2':'w'},W=158;
+const mains=$$('.main'),hero=$('.hero'),tbtn=$$('.tabs [data-main]'),dock=$('.dock'),A={};
+mains.forEach(m=>{const K=m.dataset.main;if(K==='o')return;const rows=(window.ROWS||{})[K]||[];
+  A[K]={K,root:m,rows,vis:rows.map((r,i)=>i),cur:0,strip:$('.strip',m),panel:$('.panel',m),f:$('.filters',m),tok:0,searchReady:rows.some(r=>r[6])}});
+let active='o';
+const kind=K=>K==='1'?'boxes':'pages';
+function hash(){try{history.replaceState(null,'',active==='o'?'#overview':'#'+PRE[active]+(A[active].cur+1))}catch(e){}}
+function thumb(a,i){const r=a.rows[i];if(r[7])return`<span class="ph"><img src="${esc(r[7])}" alt="" loading="lazy" decoding="async"></span>`;
+  return`<span class="ph"${window.THUMB?THUMB(a.K,i):''}></span>`}
+function paint(a,force){const s=a.strip;if(!s||!s.firstChild)return;const L=s.scrollLeft,w=s.clientWidth||innerWidth,
+    from=Math.max(0,Math.floor(L/W)-6),to=Math.min(a.vis.length,Math.ceil((L+w)/W)+6);
+  if(!force&&a.pf===from&&a.pt===to)return;a.pf=from;a.pt=to;let h='';
+  for(let v=from;v<to;v++){const i=a.vis[v],r=a.rows[i];
+    h+=`<a href="#${PRE[a.K]}${i+1}" data-v="${v}" role="option" aria-selected="${i===a.cur}" style="left:${v*W}px" title="${esc(r[2])}">${thumb(a,i)}<b>${esc(r[0])}</b><span class="nm">${esc(r[1])}</span></a>`}
+  s.firstChild.innerHTML=h}
+function strip(a){const s=a.strip;if(!s)return;if(!s.firstChild){s.innerHTML='<div class="track"></div>';
+    s.addEventListener('scroll',()=>{if(!a.raf)a.raf=requestAnimationFrame(()=>{a.raf=0;paint(a)})},{passive:true});
+    s.addEventListener('click',e=>{const t=e.target.closest('a[data-v]');if(!t)return;e.preventDefault();show(a,a.vis[+t.dataset.v],{})})}
+  s.firstChild.style.width=(a.vis.length*W)+'px';paint(a,true)}
+function centre(a,smooth){const s=a.strip;if(!s||!s.firstChild)return;const p=a.vis.indexOf(a.cur);if(p<0)return;const left=Math.max(0,p*W-s.clientWidth/2+W/2);
+  if(smooth&&!RM)s.scrollTo({left,behavior:'smooth'});else s.scrollLeft=left;paint(a,true)}
+function dockSet(){const a=A[active];document.body.classList.toggle('paging',!!a&&a.vis.length>0);if(!a||!dock)return;const r=a.rows[a.cur]||[];
+  $('.dt',dock).textContent=r[1]||'';$('.dc',dock).textContent=a.vis.length?fmt(a.vis.indexOf(a.cur)+1)+' of '+fmt(a.vis.length):''}
+function show(a,i,o){o=o||{};if(!a.vis.length){a.panel.innerHTML='';dockSet();return}if(!a.vis.includes(i))i=a.vis[0];a.cur=i;const tok=++a.tok,P=a.panel;
+  const put=h=>{if(tok!==a.tok)return;P.classList.remove('loading','in');P.innerHTML=h||'<p class="wait">Not available.</p>';void P.offsetWidth;if(!RM)P.classList.add('in');
+    const c=$('.count',P);if(c)c.textContent=fmt(a.vis.indexOf(i)+1)+' of '+fmt(a.vis.length)};
+  const L=window.LAZY&&window.LAZY[a.K];if(L)put(L[i]);
+  else if(window.fillPanel){P.classList.add('loading');window.fillPanel(a.K,i).then(put,()=>put('<p class="wait">This page could not load. Check the connection and try again.</p>'))}
+  centre(a,o.smooth);hash();dockSet();
+  if(o.scroll){const y=a.strip.getBoundingClientRect().top+scrollY-70;if(scrollY>y+40)scrollTo({top:y,behavior:RM?'auto':'smooth'})}}
+function main(K,o){o=o||{};if(K!=='o'&&!A[K])K='o';active=K;mains.forEach(m=>m.hidden=m.dataset.main!==K);
+  tbtn.forEach(b=>b.setAttribute('aria-selected',b.dataset.main===K));const sel=tbtn.find(b=>b.dataset.main===K);
+  if(sel)sel.parentNode.scrollTo({left:Math.max(0,sel.offsetLeft-24),behavior:RM?'auto':'smooth'});
+  if(K==='o'){hash();dockSet();window.drawOverview&&window.drawOverview()}else{strip(A[K]);show(A[K],A[K].cur,{})}
+  if(o.top){const y=hero.offsetHeight;if(Math.abs(scrollY-y)>2)scrollTo({top:y,behavior:RM||o.jump?'auto':'smooth'})}}
+function step(d){const a=A[active];if(!a||!a.vis.length)return;const n=a.vis.length,k=a.vis.indexOf(a.cur);show(a,a.vis[((k<0?0:k+d)%n+n)%n],{smooth:true,scroll:true})}
+const fval=(f,k)=>($(`[data-f=${k}]`,f)||{}).value||'';
+function facets(a){return a.meta||(a.meta=a.rows.map(r=>({term:String(r[3]||''),taker:r[4]||'',js:r[5]||[]})))}
 function recount(a,f,m,words,yr,tk,js){const C={term:{},taker:{},justice:{}},add=(o,k)=>{o[k]=(o[k]||0)+1};
-  a.tabs.forEach((t,k)=>{const x=m[k],q=words.every(w=>t.dataset.q.includes(w));if(!q)return;const y=!yr||x.term===yr,tt=!tk||x.taker===tk,jj=!js||x.js.includes(js);
+  a.rows.forEach((r,k)=>{const x=m[k];if(words.length&&!words.every(w=>(r[6]||'').includes(w)))return;const y=!yr||x.term===yr,tt=!tk||x.taker===tk,jj=!js||x.js.includes(js);
     if(tt&&jj)add(C.term,x.term);if(y&&jj)add(C.taker,x.taker);if(y&&tt)x.js.forEach(j=>add(C.justice,j))});
-  ['term','taker','justice'].forEach(key=>{const sel=f.querySelector('[data-f='+key+']');if(!sel)return;
-    [...sel.options].forEach(o=>{if(!o.value)return;const n=C[key][o.value]||0;o.textContent=o.value+(n?' ('+n.toLocaleString('en-US')+')':' (none)');o.disabled=!n&&o.value!==sel.value})})}
-function filter(a){const f=a.root.querySelector('.filters');if(!f)return;const words=fval(f,'q').toLowerCase().split(/\s+/).filter(Boolean),
-  yr=fval(f,'term'),tk=fval(f,'taker'),js=fval(f,'justice'),m=facets(a);
-  a.vis=[];a.tabs.forEach((t,k)=>{const x=m[k],ok=(!yr||x.term===yr)&&(!tk||x.taker===tk)&&(!js||x.js.includes(js))&&words.every(w=>t.dataset.q.includes(w));if(t.hidden===ok)t.hidden=!ok;if(ok)a.vis.push(k)});
-  recount(a,f,m,words,yr,tk,js);
-  const total=a.tabs.length,n=a.vis.length,kind=a.root.dataset.main==='1'?'boxes':'pages';f.querySelector('.fcount').textContent=n===total?total.toLocaleString('en-US')+' '+kind:n.toLocaleString('en-US')+' of '+total.toLocaleString('en-US')+' '+kind;
-  const cl=f.querySelector('.fclear');if(cl)cl.hidden=!(words.length||yr||tk||js);
-  a.root.querySelector('.empty').hidden=n>0;if(!n){a.panels.forEach(p=>p.hidden=true);return}show(a.vis.includes(a.cur)?a.cur:a.vis[0],false)}
-areas.forEach((a,j)=>{const f=a.root.querySelector('.filters');if(!f)return;let tm;
-  f.addEventListener('input',e=>{active=j;clearTimeout(tm);if(e.target.matches('input'))tm=setTimeout(()=>filter(a),120);else filter(a)});
-  const cl=f.querySelector('.fclear');if(cl)cl.onclick=()=>{f.querySelectorAll('input,select').forEach(x=>x.value='');active=j;filter(a);f.querySelector('[data-f=q]').focus()};
-  const s=f.querySelector('.fcount');if(s)s.textContent=a.tabs.length.toLocaleString('en-US')+' '+(a.root.dataset.main==='1'?'boxes':'pages');
-  if(a.tabs.length)recount(a,f,facets(a),[],'','','')});
+  ['term','taker','justice'].forEach(key=>{const sel=$(`[data-f=${key}]`,f);if(!sel)return;
+    [...sel.options].forEach(op=>{if(!op.value)return;const n=C[key][op.value]||0;op.textContent=op.value+(n?' ('+fmt(n)+')':' (none)');op.disabled=!n&&op.value!==sel.value})})}
+function filter(a){const f=a.f;if(!f)return;const words=fval(f,'q').toLowerCase().split(/\s+/).filter(Boolean),yr=fval(f,'term'),tk=fval(f,'taker'),js=fval(f,'justice'),m=facets(a),cnt=$('.fcount',f);
+  if(words.length&&!a.searchReady&&window.loadSearch){cnt.textContent='Loading search…';window.loadSearch().then(()=>{a.searchReady=true;filter(a)},()=>{cnt.textContent='Search unavailable'});return}
+  a.vis=[];a.rows.forEach((r,k)=>{const x=m[k];if((!yr||x.term===yr)&&(!tk||x.taker===tk)&&(!js||x.js.includes(js))&&words.every(w=>(r[6]||'').includes(w)))a.vis.push(k)});
+  recount(a,f,m,words,yr,tk,js);const n=a.vis.length,t=a.rows.length;cnt.textContent=n===t?fmt(t)+' '+kind(a.K):fmt(n)+' of '+fmt(t)+' '+kind(a.K);
+  const cl=$('.fclear',f);if(cl)cl.hidden=!(words.length||yr||tk||js);const em=$('.empty',a.root);if(em)em.hidden=n>0;
+  strip(a);if(a.strip)a.strip.scrollLeft=0;if(!n){a.panel.innerHTML='';dockSet();return}if(active===a.K)show(a,a.vis.includes(a.cur)?a.cur:a.vis[0],{});else if(!a.vis.includes(a.cur))a.cur=a.vis[0]}
+Object.values(A).forEach(a=>{const f=a.f;if(!f)return;let tm;
+  f.addEventListener('input',e=>{active=a.K;clearTimeout(tm);if(e.target.matches('input'))tm=setTimeout(()=>filter(a),170);else filter(a)});
+  f.addEventListener('focusin',e=>{if(e.target.matches('input')&&!a.searchReady&&window.loadSearch)window.loadSearch().then(()=>{a.searchReady=true})});
+  const cl=$('.fclear',f);if(cl)cl.onclick=()=>{$$('input,select',f).forEach(x=>x.value='');filter(a)};
+  $('.fcount',f).textContent=fmt(a.rows.length)+' '+kind(a.K);if(a.rows.length)recount(a,f,facets(a),[],'','','')});
+window.__goto=(K,vals)=>{const a=A[K];if(!a)return;if(a.f){$$('input,select',a.f).forEach(x=>x.value='');for(const k in vals){const x=$(`[data-f=${k}]`,a.f);if(x)x.value=vals[k]}}
+  active=K;main(K,{top:true});if(a.f)filter(a)};
+$$('[data-go]').forEach(b=>b.onclick=()=>main(b.dataset.go,{top:true}));tbtn.forEach(b=>b.onclick=()=>main(b.dataset.main,{top:true}));
+$$('[data-fixes]').forEach(b=>b.onclick=()=>window.__goto(b.dataset.fixes,{q:'corrected'}));
+document.addEventListener('click',e=>{const b=e.target.closest('[data-step]');if(b)step(+b.dataset.step)});
+addEventListener('resize',()=>{Object.values(A).forEach(a=>paint(a,true))},{passive:true});
+let sx=null;$$('.panel').forEach(p=>{p.addEventListener('touchstart',e=>{const t=e.touches[0];sx=e.touches.length===1&&!e.target.closest('img.z,.crop,pre,.ov-scroll')?[t.clientX,t.clientY]:null},{passive:true});
+  p.addEventListener('touchend',e=>{if(!sx)return;const t=e.changedTouches[0],dx=t.clientX-sx[0],dy=t.clientY-sx[1];sx=null;if(Math.abs(dx)>70&&Math.abs(dx)>2*Math.abs(dy))step(dx<0?1:-1)},{passive:true})});
+if(!RM)$$('[data-count]').forEach(el=>{const n=+el.dataset.count,big=el.dataset.fmt==='M',t0=performance.now();
+  const tick=t=>{const p=Math.min(1,(t-t0)/1600),v=n*(1-Math.pow(1-p,4));el.textContent=big?(v/1e6).toFixed(1)+'M':fmt(Math.round(v));if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)});
 try{const y=sessionStorage.getItem('y');if(y!==null){sessionStorage.removeItem('y');addEventListener('load',()=>scrollTo(0,+y))}}catch(e){}
-try{const u=new URLSearchParams(location.search);areas.forEach(ar=>{const f=ar.root.querySelector('.filters');if(!f)return;let any=false;
-  [['q','q'],['term','year'],['taker','by'],['justice','justice']].forEach(([k,param])=>{const el=f.querySelector('[data-f='+k+']'),v=u.get(param);if(el&&v){el.value=v;any=true}});if(any)filter(ar)})}catch(e){}
-const h=location.hash.slice(1),at=key=>mains.findIndex(m=>m.dataset.main===key);let k0=at('o');
-if(k0<0||(location.search&&!h))k0=at('0');
-if(h&&h!=='overview'){const key=Object.keys(PRE).find(k=>PRE[k]===h.replace(/[0-9]/g,'')),j=at(key);if(j>=0){k0=j;areas[j].cur=Math.max(0,(parseInt(h.replace(/^[a-z]/,''))||1)-1)}}
-main(k0,false);addEventListener('load',()=>centre(areas[active],false));
-const lb=document.getElementById('lb'),im=lb.querySelector('img');let s=1,x=0,y=0,drag=null;
+let K0='o',deep=false;const h=location.hash.slice(1);
+if(h&&h!=='overview'){const p=h.replace(/[0-9]/g,''),K=Object.keys(PRE).find(k=>PRE[k]===p);if(K&&A[K]){K0=K;deep=true;A[K].cur=Math.max(0,(parseInt(h.replace(/^[a-z]/,''))||1)-1)}}
+try{const u=new URLSearchParams(location.search);let hit=null;Object.values(A).forEach(a=>{if(!a.f)return;
+  [['q','q'],['term','year'],['taker','by'],['justice','justice']].forEach(([k,p])=>{const el=$(`[data-f=${k}]`,a.f),v=u.get(p);if(el&&v){el.value=v;hit=hit||a}})});
+  if(hit){Object.values(A).forEach(a=>{if(a.f&&(fval(a.f,'q')||fval(a.f,'term')||fval(a.f,'taker')||fval(a.f,'justice')))filter(a)});if(K0==='o'){K0=hit.K;deep=true}}}catch(e){}
+main(K0,{top:deep,jump:true});
+const lb=$('#lb'),im=$('img',lb);let s=1,x=0,y=0,drag=null,pinch=null;
 const apply=()=>im.style.transform=`translate(${x}px,${y}px) scale(${s})`;
-function fit(){const w=im.naturalWidth,h=im.naturalHeight;s=Math.min(innerWidth*.94/w,innerHeight*.9/h);x=(innerWidth-w*s)/2;y=(innerHeight-h*s)/2;apply()}
-function focusBox(b){const[fx,fy,fw,fh]=b.split(',').map(Number),W=im.naturalWidth,H=im.naturalHeight,bw=fw*W,bh=fh*H;
-  s=Math.min(innerWidth*.94/bw,innerHeight*.86/bh,4);x=(innerWidth-bw*s)/2-fx*W*s;y=(innerHeight-bh*s)/2-fy*H*s;apply()}
+function fit(){const w=im.naturalWidth,hh=im.naturalHeight;s=Math.min(innerWidth*.94/w,innerHeight*.9/hh);x=(innerWidth-w*s)/2;y=(innerHeight-hh*s)/2;apply()}
+function focusBox(b){const[fx,fy,fw,fh]=b.split(',').map(Number),Wd=im.naturalWidth,H=im.naturalHeight,bw=fw*Wd,bh=fh*H;
+  s=Math.min(innerWidth*.94/bw,innerHeight*.86/bh,4);x=(innerWidth-bw*s)/2-fx*Wd*s;y=(innerHeight-bh*s)/2-fy*H*s;apply()}
 function zoom(f,cx=innerWidth/2,cy=innerHeight/2){const n=Math.min(Math.max(s*f,.05),12);x=cx-(cx-x)*n/s;y=cy-(cy-y)*n/s;s=n;apply()}
 document.addEventListener('click',e=>{const t=e.target;if(t.matches('img.z')){const bx=t.dataset.box,go=()=>bx?focusBox(bx):fit();im.onload=go;im.src=t.src;lb.classList.add('on');lb.setAttribute('aria-hidden','false');if(im.complete)go()}});
 const close=()=>{lb.classList.remove('on');lb.setAttribute('aria-hidden','true')};
-lb.querySelector('.bar').onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.z)zoom(+b.dataset.z);else if('fit' in b.dataset)fit();else close()};
+$('.bar',lb).onclick=e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.z)zoom(+b.dataset.z);else if('fit' in b.dataset)fit();else close()};
 lb.addEventListener('wheel',e=>{e.preventDefault();zoom(Math.exp(-e.deltaY*.0015),e.clientX,e.clientY)},{passive:false});
-lb.addEventListener('pointerdown',e=>{if(e.target.closest('.bar'))return;drag=[e.clientX-x,e.clientY-y];lb.setPointerCapture(e.pointerId);lb.style.cursor='grabbing'});
+lb.addEventListener('pointerdown',e=>{if(e.target.closest('.bar')||e.pointerType==='touch')return;drag=[e.clientX-x,e.clientY-y];lb.setPointerCapture(e.pointerId);lb.style.cursor='grabbing'});
 lb.addEventListener('pointermove',e=>{if(drag){x=e.clientX-drag[0];y=e.clientY-drag[1];apply()}});
 lb.addEventListener('pointerup',()=>{drag=null;lb.style.cursor='grab'});lb.addEventListener('dblclick',fit);
+const dist=t=>Math.hypot(t[0].clientX-t[1].clientX,t[0].clientY-t[1].clientY),mid=t=>[(t[0].clientX+t[1].clientX)/2,(t[0].clientY+t[1].clientY)/2];
+lb.addEventListener('touchstart',e=>{if(e.target.closest('.bar'))return;const T=e.touches;if(T.length===2)pinch={d:dist(T),s,x,y,m:mid(T)};else if(T.length===1)drag=[T[0].clientX-x,T[0].clientY-y]},{passive:true});
+lb.addEventListener('touchmove',e=>{const T=e.touches;if(pinch&&T.length===2){const k=dist(T)/pinch.d,n=Math.min(Math.max(pinch.s*k,.05),12),c=mid(T);
+    x=c[0]-(pinch.m[0]-pinch.x)*n/pinch.s;y=c[1]-(pinch.m[1]-pinch.y)*n/pinch.s;s=n;apply()}else if(drag&&T.length===1){x=T[0].clientX-drag[0];y=T[0].clientY-drag[1];apply()}},{passive:true});
+lb.addEventListener('touchend',e=>{if(e.touches.length<2)pinch=null;if(!e.touches.length)drag=null},{passive:true});
 document.addEventListener('keydown',e=>{if(lb.classList.contains('on')){if(e.key==='Escape')close();if(e.key==='+'||e.key==='=')zoom(1.25);if(e.key==='-')zoom(.8);return}
-if(e.target.matches('input,select'))return;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)});
-window.__filterAll=()=>areas.forEach(a=>{const f=a.root.querySelector('.filters');if(f&&fval(f,'q'))filter(a)})};
+  if(e.target.matches('input,select'))return;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1)})};
 (window.__ready||Promise.resolve()).then(()=>window.__init());
 </script></body></html>
